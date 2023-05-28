@@ -5,7 +5,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Product from './components/Product';
 import Contact from './components/Contact';
-import Header from './components/Header';
+//import Header from './components/Header';
+import Layout from './components/Layout';
 
 
 const App = createBrowserRouter(
@@ -13,9 +14,9 @@ const App = createBrowserRouter(
     
     {
       path: "/",
-      element: <Header />,
-    },
-    {
+      element: <Layout />,
+      children: [
+        {
         path: "/home",
         element: <Home />,
     },
@@ -31,6 +32,9 @@ const App = createBrowserRouter(
       path: "/contact",
       element: <Contact />
     },
+      ]
+    }
+    
 ]);
 
 export default App;
