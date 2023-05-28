@@ -7,6 +7,7 @@ import Product from './components/Product';
 import Contact from './components/Contact';
 //import Header from './components/Header';
 import Layout from './components/Layout';
+import Login from './components/buttons/Login';
 
 
 const App = createBrowserRouter(
@@ -31,6 +32,10 @@ const App = createBrowserRouter(
     {
       path: "/contact",
       element: <Contact />
+    },
+    {
+      path: "/login",
+      element: <Login />
     },
       ]
     }
