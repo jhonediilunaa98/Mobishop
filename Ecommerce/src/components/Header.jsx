@@ -1,12 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { Link } from 'react-router-dom'
+import mobiLogo from '../public/MOBI.png'
 
 const Header = () => {
   return (
     <header>
       <picture>
-        <img src="MOBI.png" alt="" />
+        <img src={mobiLogo} alt="" />
       </picture>
       <nav>
           <Link to="/home">Home</Link>
