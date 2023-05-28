@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <header>
-      <picture> <img src="./Public/Imagenes/Logo.svg" alt=""/> </picture>
+      <picture> <img src="./Public/Logo.svg" alt=""/> </picture>
       <nav>
           <Link to="/home">Home</Link>
           <Link to="/product">Product</Link>
