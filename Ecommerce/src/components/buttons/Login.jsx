@@ -10,29 +10,27 @@ const Login = () => {
                 <section className='section-form'>
                     <h1 className='title'>Inciar Sesión</h1>
                     <form>
-                        <article className='contain-form'>
                         <input 
                             type="email"
                             name='email'
                             placeholder='Tu Email'
+                            id='email'
                             onChange={onChange}
                          />
-                        </article>
-                        <article className='contain-form'>
+                        
                         <input 
                             type="password"
                             name='password'
                             placeholder='Tu Contraseña'
+                            id='password'
                             onChange={onChange}
                          />
-                        </article>
-                        <article>
+                        
                         <input 
                             type="submit"
                             className='btn-submit'
                             value='Iniciar Sesión'
                          />
-                        </article>
                     </form>
                 </section>
             </main>
