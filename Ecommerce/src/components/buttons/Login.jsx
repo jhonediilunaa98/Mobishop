@@ -18,7 +18,7 @@ const Login = () => {
                             onChange={onChange}
                          />
                         </article>
-                        <article>
+                        <article className='contain-form'>
                         <input 
                             type="password"
                             name='password'
