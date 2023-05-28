@@ -1,19 +1,4 @@
-
-nav{
-    background-color: var(--color-4);
+header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.logo{
-    color: var(--color-3);
-    font-size: 28px;
-}
-nav link{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
 }

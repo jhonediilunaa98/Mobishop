@@ -7,7 +7,11 @@ const Login = () => {
     }
     return ( 
             <main className='main-form'>
-                <section className='section-form'>
+                
+                <section className='section-1'>
+                    <h2></h2>
+                </section>
+                <section className='section-2'>
                     <h1 className='title'>Inciar Sesión</h1>
                     <form>
                         <input 
