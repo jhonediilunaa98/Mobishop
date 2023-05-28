@@ -3,7 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Header = () => {
   return (
-    <>
+    <header>
+      <picture> <img src="./Public/Imagenes/Logo.svg" alt=""/> </picture>
       <nav>
           <Link to="/home">Home</Link>
           <Link to="/product">Product</Link>
@@ -11,7 +12,7 @@ const Header = () => {
           <Link to="/contact">Contact</Link>
           <Link to="/login">Login</Link>
     </nav>
-    </>
+    </header>
   )
 }
 
