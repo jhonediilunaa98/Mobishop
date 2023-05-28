@@ -5,9 +5,9 @@ import mobiLogo from '../public/MOBI.png'
 
 const Header = () => {
   return (
-    <header>
-      <picture>
-        <img src={mobiLogo} alt="" />
+    <header className='header'>
+      <picture className='logo'>
+        <img src={mobiLogo} alt="Logo" />
       </picture>
       <nav>
           <Link to="/home">Home</Link>
