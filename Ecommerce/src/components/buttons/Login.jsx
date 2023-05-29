@@ -38,8 +38,9 @@ const Login = () => {
                          />
                     </form>
                 </section>
-            </main>
-            <Footer />
+                
+            </main>  
+            <Footer />         
             </>
      );
 }
