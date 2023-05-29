@@ -79,7 +79,7 @@ form {
     width: 100%;
 }
 
-input {
+#email, #password {
     border-radius: 18px;
     border: 2px solid var(--color-2);
     padding: 10px;
