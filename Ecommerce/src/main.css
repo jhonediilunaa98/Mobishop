@@ -4,3 +4,4 @@
 @import url('./normalize.css');
 @import url('./components/Header.module.css');
 @import url('./components/Home.module.css');
+@import url('./components/product.module.css');

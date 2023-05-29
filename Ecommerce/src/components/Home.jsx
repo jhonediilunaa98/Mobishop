@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import './Home.module.css'
-import airpod_home1 from '../assets/airpod_home1.jpeg'
-import appleW_home_1 from '../assets/appleW_home_1.jpeg'
+//import airpod_home1 from '../assets/airpod_home1.jpeg'
+//import appleW_home_1 from '../assets/appleW_home_1.jpeg'
  import iphone_home1 from '../assets/iphone_home1.jpeg'
  import iphone_14 from '../assets/iphone_14.webp'
  import smart_1 from '../assets/smart_1.png'
