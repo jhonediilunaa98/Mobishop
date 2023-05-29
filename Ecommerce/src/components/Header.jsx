@@ -8,13 +8,13 @@ const Header = () => {
   return (
     <header className='hero'>
         {/* <img  src={mobiLogo} alt=""className='logo' /> */}
-        <h2>MOBISHOP</h2>
+        <h1 className='title-header'>MOBISHOP</h1>
       <nav>
-          <Link to="/home">Home</Link>
-          <Link to="/product">Product</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/login">Login</Link>
+          <Link to="/home" className='link'>Home</Link>
+          <Link to="/product" className='link'>Product</Link>
+          <Link to="/about" className='link'>About</Link>
+          <Link to="/contact" className='link'>Contact</Link>
+          <Link to="/login" className='link'>Login</Link>
     </nav>
     </header>
   )

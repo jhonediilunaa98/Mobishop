@@ -1,18 +1,33 @@
-nav{
-    background-color: var(--color-4);
+.title-header {
+    padding: 5px;
+    color: var(--color-5);
+}
+
+.hero {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: var(--color-1);
+    color: var(--color-5);
 }
-.logo{
-    color: var(--color-3);
-    font-size: 28px;
+
+nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-nav link{
-    list-style-type: none;
-    display: inline-block;
+.link {
     padding: 10px 20px;
+    color: var(--color-4);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+    }
 }
