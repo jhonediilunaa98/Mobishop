@@ -5,7 +5,7 @@ import './Home.module.css'
 const Home = () => {
   return (
     <>
-    <h1>hola</h1>
+      <Footer />
     </>
   )
 }
