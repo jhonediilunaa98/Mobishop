@@ -71,12 +71,12 @@
 }
 
 
-form {
+#form-login {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 3;
     gap: 15px;
-    width: 100%;
+    width: 70%;
 }
 
 #email, #password {
@@ -84,6 +84,7 @@ form {
     border: 2px solid var(--color-2);
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 .btn-submit {
@@ -93,4 +94,6 @@ form {
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
+    padding: 13px;
+    border-radius: 18px;
 }
