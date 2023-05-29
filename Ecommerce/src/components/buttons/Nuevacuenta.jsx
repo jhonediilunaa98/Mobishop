@@ -2,16 +2,18 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer'
 
-const Login = () => {
+const Nuevacuenta = () => {
 
     // State para iniciar sesion
     const [ usuario, guardarUsuario ] = useState({
+        nombre: '',
         email: '',
-        password: ''
+        password: '',
+        confirmar: ''
     })
 
     //Estraer Usuario
-    const { email, password } = usuario;
+    const { nombre, email, password, confirmar } = usuario;
 
     const onChange = e => {
         guardarUsuario({
@@ -24,6 +26,11 @@ const Login = () => {
     const onSubmit = e => {
         e.preventDefault();
         // Validar Campos vacios
+
+        // Password min 6 caracteres
+
+        // Los 2 password components
+
         // Pasarlo al action
     }
 
@@ -34,11 +41,19 @@ const Login = () => {
                     <h2></h2>
                 </section>
                 <section className='section-2'>
-                    <h1 className='title'>Iniciar Sesión</h1>
+                    <h1 className='title'>Crear Cuenta</h1>
                     <form 
                         id='form-login'
                         onSubmit={onSubmit}
                     >
+                        <input 
+                            type="text"
+                            name='nombre'
+                            placeholder='Tu Nombre'
+                            id='email'
+                            value={nombre}
+                            onChange={onChange}
+                         />
                         <input 
                             type="email"
                             name='email'
@@ -56,13 +71,22 @@ const Login = () => {
                             value={password}
                             onChange={onChange}
                          />
+
+                        <input 
+                            type="password"
+                            name='confirmar'
+                            placeholder='Repite tu Contraseña'
+                            id='password'
+                            value={confirmar}
+                            onChange={onChange}
+                         />
                         
                         <input 
                             type="submit"
                             className='btn-submit'
-                            value='Iniciar Sesión'
+                            value='Crear Cuenta'
                          />
-                         <Link to={'/nuevacuenta'} className='new'>Crear Cuenta</Link>
+                         <Link to={'/login'} className='new'>¿Ya tienes una cuenta?</Link>
                     </form>
                     
                 </section>
@@ -73,4 +97,4 @@ const Login = () => {
      );
 }
  
-export default Login;
+export default Nuevacuenta;
