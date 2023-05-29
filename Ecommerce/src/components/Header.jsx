@@ -1,16 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from './Header.module.css'
 import Logo from '../public/Logo.svg'; 
-
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header className='hero'>
-        {/* <img  src={mobiLogo} alt=""className='logo' /> */}
-        <h1 className='title-header'>MOBISHOP</h1>
        <img src={Logo} alt="Logo" className={styles.logo} />
 
       <nav>
