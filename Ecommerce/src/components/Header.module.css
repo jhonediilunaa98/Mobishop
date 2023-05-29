@@ -10,6 +10,9 @@
     justify-content: space-between;
     background-color: var(--color-1);
     color: var(--color-5);
+    height: 10vh;
+    width: 100%;
+    padding: 5px 45px;
 }
 
 nav {
@@ -18,7 +21,7 @@ nav {
     flex-direction: column;
 }
 .link {
-    padding: 10px 20px;
+    padding: 10px;
     color: var(--color-4);
 }
 
@@ -40,6 +43,9 @@ nav a {
 }
 
 .Logo {
-    width: 20%; /* Ajusta el ancho según tus necesidades */
-    height: auto; /* Ajusta la altura según tus necesidades */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

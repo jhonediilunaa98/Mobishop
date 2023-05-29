@@ -2,12 +2,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../public/Logo.svg'; 
-import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header className='hero'>
-       <img src={Logo} alt="Logo" className={styles.logo} />
+      
+      <picture className='Logo'>
+        <img src={Logo} alt="Logo"/>
+      </picture>
 
       <nav>
           <Link to="/home" className='link'>Home</Link>
