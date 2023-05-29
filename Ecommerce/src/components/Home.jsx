@@ -3,7 +3,9 @@ import React from 'react'
 import './Home.module.css'
 import airpod_home1 from '../assets/airpod_home1.jpeg'
 import appleW_home_1 from '../assets/appleW_home_1.jpeg'
-import iphone_home1 from '../assets/iphone_home1.jpeg'
+ import iphone_home1 from '../assets/iphone_home1.jpeg'
+ import iphone_14 from '../assets/iphone_14.webp'
+ import smart_1 from '../assets/smart_1.png'
 
 
 const Home = () => {
@@ -17,10 +19,10 @@ const Home = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={airpod_home1} className="d-block w-100" alt="Iphone" height="500px" width="500px" />
+            <img src={iphone_14} className="d-block w-100" alt="Iphone" height="500px" width="500px" />
           </div>
           <div className="carousel-item">
-            <img src={appleW_home_1} className="d-block w-100" alt="Iphone" height="500px" />
+            <img src={smart_1} className="d-block w-100" alt="Iphone" height="500px" width="400px"/>
           </div>
           <div className="carousel-item">
             <img src={iphone_home1} className="d-block w-100" alt="Iphone" height="500px"  />

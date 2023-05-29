@@ -1,0 +1,137 @@
+/* aside{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-4);
+    }
+     div.gallery{
+        width: 100%;
+    }
+    div .gallery-container{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        max-width: 100px;
+        position: relative;
+    }
+    
+     .gallery-item{
+        height: 200px;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.3 ease-in-out;
+        width: 330px;
+        z-index: 0;
+        border-radius: 15px;
+        background-size: contain;
+    }
+     .gallery-item-1{
+        left: 15%;
+        opacity: .4;
+        transform: translateX(-50%);
+    }  
+    .gallery-item-2, .gallery-item-4{
+        height: 250px;
+        opacity: 0.8;
+        width: 380px;
+        z-index: 1;
+    }
+    .gallery-item-2{
+        left: 30%;
+        transform: translateX(-50%);
+    }
+    .gallery-item-3{
+        box-shadow: .2px 5px 33px rgba(0, 0, 0, 0.35);
+        height: 300px;
+        opacity: 1;
+        left: 50px;
+        transform: translateX(-50px);
+        width: 430px;
+        z-index: 2;
+    }
+
+    .gallery-item-4{
+        left: 70%;
+        transform: translateX(.50%);
+    }
+    .gallery-item-5{
+        left: 85%;
+        opacity: .4;
+        transform: translateX(-50%);
+    }
+
+    .gallery-controls{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+        height: 100px;
+    } */
+
+    #works {
+
+        .carousel  {
+         max-width: 980px; /* ширина всего блока */
+         margin: 50px auto;
+         width:100%;
+       }
+       .carousel-wrapper {
+         margin: 10px 30px; /* отступы для стрелок */
+         overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+         position:relative;
+       }
+       .carousel-items {
+         width: 10000px; /* устанавливаем большую ширину для набора элементов */
+         position: relative; /* позиционируем блок относительно основной области карусели */
+    
+       }
+       .carousel-block {
+         float: left; /* выстраиваем все элементы карусели в ряд */
+         width: 210px; /* задаём ширину каждого элемента */
+         height: 100%;
+         overflow: hidden;
+         padding: 10px; /* делаем оступы, чтобы элементы не сливались */
+  
+            .work {
+              display: block;
+              img { height: 200px;}
+              p {font-size: 1em;}
+            }
+  
+       }
+       
+  
+      /*********** BUTTONS ***********/
+      .carousel-button-left, .carousel-button-right{
+        a {
+         width: 50px; 
+         height: 50px; 
+         position: relative;
+         top: 150px; 
+         cursor: pointer; 
+         text-decoration:none;
+       }
+      }
+      .carousel-button-left {
+         a {
+         float: left; 
+         background: url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png");
+         background-size: cover;
+         
+       }
+      }
+      .carousel-button-right {
+         a {
+         float: right; 
+         background: url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png") ;
+         background-size: cover;
+         transform: rotate(180deg) ;
+       }
+      }
+  
+  }
+  
+  
