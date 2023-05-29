@@ -12,7 +12,7 @@ const Product = () => {
   return (
     <>
     <section className="products">
-		<h2>Our Products</h2>
+		<h2 className='h2'>Productos</h2>
 		<div className="all-products">
 			<div className="product">
 				<img src={airpod} />

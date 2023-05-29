@@ -1,14 +1,16 @@
-section{
+.products{
 	font-size: 1.7rem;
-	font-family: 'Merriweather Sans', sans-serif;
-	background: #2c3e50;
+	font-family: 'Poppins','Merriweather Sans', sans-serif;
+	background: var(--color-5);
 	color: #ececec;
 	padding: 4rem;
 }
-h2{
+.h2{
 	text-align: center;
 	margin-bottom: 5rem;
 	font-size: 4rem;
+    color: #21201e;
+    font-family: 'Poppins';
 }
 
 .all-products{
