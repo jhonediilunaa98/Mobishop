@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from './Footer'
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <>
+      <Footer />
+    </>
   )
 }
 

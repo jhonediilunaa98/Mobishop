@@ -1,11 +1,12 @@
 import React from 'react'
+import Footer from '../Footer'
 
 const Login = () => {
 
     const onChange = () => {
 
     }
-    return ( 
+    return ( <>
             <main className='main-form'>
                 
                 <section className='section-1'>
@@ -38,6 +39,8 @@ const Login = () => {
                     </form>
                 </section>
             </main>
+            <Footer />
+            </>
      );
 }
  
