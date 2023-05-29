@@ -13,7 +13,7 @@ const Login = () => {
                     <h2></h2>
                 </section>
                 <section className='section-2'>
-                    <h1 className='title'>Inciar Sesión</h1>
+                    <h1 className='title'>Iniciar Sesión</h1>
                     <form id='form-login'>
                         <input 
                             type="email"
