@@ -16,3 +16,15 @@ nav link{
     display: inline-block;
     padding: 10px 20px;
 }
+
+nav a {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--color-2);
+}
+
+.Logo {
+    width: 40px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Ajusta la altura según tus necesidades */
+  }
