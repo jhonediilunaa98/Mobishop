@@ -11,51 +11,52 @@ import ipad from '../assets/ipad-pro.jpg'
 const Product = () => {
   return (
     <>
-    <section className="products">
-		<h2 className='h2'>Productos</h2>
-		<div className="all-products">
-			<div className="product">
-				<img src={airpod} />
-				<div className="product-info">
-					<h4 className="product-title">AirPod 2nd Gen
-					</h4>
-					<p className="product-price">$129</p>
-					<a className="product-btn" href="#">Buy Now</a>
+      <section className="products">
+        <h2 className="h2">Productos </h2>
+        <input className="inpu inp" name="text" placeholder="Buscar..." type="search"></input>
+        <div className="all-products">
+          <div className="product">
+            <img src={airpod} />
+            <div className="product-info">
+              <h4 className="product-title">AirPod 2nd Gen
+              </h4>
+              <p className="product-price">$129</p>
+              <a className="product-btn" href="#">Buy Now</a>
 
-				</div>
-			</div>
-			<div className="product">
-				<img src={iphone} />
-				<div className="product-info">
-					<h4 className="product-title">Apple Watch
-					</h4>
-					<p className="product-price">$299</p>
-					<a className="product-btn" href="#">Buy Now</a>
+            </div>
+          </div>
+          <div className="product">
+            <img src={iphone} />
+            <div className="product-info">
+              <h4 className="product-title">Apple Watch
+              </h4>
+              <p className="product-price">$299</p>
+              <a className="product-btn" href="#">Buy Now</a>
 
-				</div>
-			</div>
-			<div className="product">
-				<img src={apple} />
-				<div className="product-info">
-					<h4 className="product-title">iPhone 14
-					</h4>
-					<p className="product-price">$999</p>
-					<a className="product-btn" href="#">Buy Now</a>
+            </div>
+          </div>
+          <div className="product">
+            <img src={apple} />
+            <div className="product-info">
+              <h4 className="product-title">iPhone 14
+              </h4>
+              <p className="product-price">$999</p>
+              <a className="product-btn" href="#">Buy Now</a>
 
-				</div>
-			</div>
-			<div className="product">
-				<img src={ipad} />
-				<div className="product-info">
-					<h4 className="product-title">iPan Pro
-						</h4>
-					<p className="product-price">$629*</p>
-					<a className="product-btn" href="#">Buy Now</a>
+            </div>
+          </div>
+          <div className="product">
+            <img src={ipad} />
+            <div className="product-info">
+              <h4 className="product-title">iPan Pro
+              </h4>
+              <p className="product-price">$629*</p>
+              <a className="product-btn" href="#">Buy Now</a>
 
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   )
