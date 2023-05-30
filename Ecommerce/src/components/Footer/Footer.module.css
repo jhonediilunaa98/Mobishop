@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    color: snow;
+    color: var(--color-4);
     font-size: 20px;
   }
   

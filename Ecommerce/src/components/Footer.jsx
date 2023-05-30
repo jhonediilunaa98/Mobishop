@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer/Footer.module.css';
-import Logo from '../public/Logo.svg';
+import Logo from '../public/MobiShopBlanco.svg';
 import {FontAwesomeIcon} from '@Fortawesome/react-fontawesome';
 import {faSquareInstagram,
     faFacebook,
