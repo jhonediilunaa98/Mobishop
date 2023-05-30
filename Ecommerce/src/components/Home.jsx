@@ -11,6 +11,7 @@ import applew from '../assets/apple-watch-pcq.jpg';
 import black_1 from '../assets/black_1.webp';
 import black_2 from '../assets/black_2.jpeg';
 import oferta_1 from '../assets/oferta_1.jpeg';
+import vide from '../assets/iPhone 15 Pro Max Trailer Official Design.mp4'
 
 
 
@@ -20,7 +21,7 @@ const Home = () => {
     <main>
       <h2 id='tit'>Lo que deseas aca lo encuentras </h2>
       <div className="card">
-    <p className='p'><span className='span'><iframe width="560" height="315" src="https://www.youtube.com/embed/zPSizLIeEsI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span></p>
+    <p className='p'><span className='span'><iframe width="560" height="315" src={vide} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span></p>
     <p className='p'><span className='span'><img src={black_2} /></span></p>
     <p className='p'><span className='span'><img src= {oferta_1} /></span></p>
     </div>
