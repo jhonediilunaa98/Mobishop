@@ -13,17 +13,17 @@ import {faSquareInstagram,
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles['footer-content']}>
+      <section className={styles['footer-content']}>
       <picture>
           <img src={Logo} alt="Logo" className={styles.logo} />
         </picture>
-        <section className="RedesSociales">
+        <ul className="RedesSociales">
       <FontAwesomeIcon icon={faSquareInstagram}/>
       <FontAwesomeIcon icon={faFacebook}/>
       <FontAwesomeIcon icon={faTwitter}/>
       <FontAwesomeIcon icon={faYoutube}/>
+      </ul>
       </section>
-      </div>
         <nav className={styles['footer-nav']}>
               <Link to="/home" className={styles.link}>Home</Link>
               <Link to="/product" className={styles.link}>Product</Link>
