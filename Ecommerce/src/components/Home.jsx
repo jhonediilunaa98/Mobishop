@@ -1,17 +1,9 @@
 // 
-
-
-
 import './Home.module.css';
-import airpod from '../assets/AirPod 2nd Gen.jpg';
-import ipad from '../assets/ipad-pro.jpg';
-import iphone14 from '../assets/iphone_14.webp';
-import smart from '../assets/smart_1.png';
-import applew from '../assets/apple-watch-pcq.jpg';
-import black_1 from '../assets/black_1.webp';
 import black_2 from '../assets/black_2.jpeg';
 import oferta_1 from '../assets/oferta_1.jpeg';
 import vide from '../assets/iPhone 15 Pro Max Trailer Official Design.mp4'
+
 
 
 
@@ -21,8 +13,8 @@ const Home = () => {
     <main>
       <h2 id='tit'>Lo que deseas aca lo encuentras </h2>
       <div className="card">
-    <p className='p'><span className='span'><iframe width="560" height="315" src={vide} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span></p>
-    <p className='p'><span className='span'><img src={black_2} /></span></p>
+    <p className='p'><span className='span'><img src= {black_2} /></span></p>
+    <p className='p'><span className='span'><iframe className='.video-container video' width="560" height="315" src={vide} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span></p>
     <p className='p'><span className='span'><img src= {oferta_1} /></span></p>
     </div>
 

@@ -8,11 +8,17 @@ import ipad from '../assets/ipad-pro.jpg'
 
 
 const Product = () => {
+
   return (
     <>
       <section className="products">
         <h2 className="h2">Productos </h2>
-        <input className="inpu inp" name="text" placeholder="Buscar..." type="search"></input>
+        <article className='button'>
+        <button>Iphone 14</button>
+        <button>Iphone 14 Pro</button>
+        <button>Iphone 14 Pro Max</button>
+        <button>Iphone 15</button>
+        </article>
         <div className="all-products">
           <div className="product">
             <img src={airpod} />
@@ -51,6 +57,10 @@ const Product = () => {
               </h4>
               <p className="product-price">$629*</p>
               <a className="product-btn" href="#">Buy Now</a>
+
+
+
+              
 
             </div>
           </div>
