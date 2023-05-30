@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import './product.module.css'
-import Footer from './Footer'
 import airpod from '../assets/AirPod 2nd Gen.jpg'
 import iphone from '../assets/iPhone-14.jpg'
 import apple from '../assets/apple-watch-pcq.jpg'
@@ -57,7 +56,6 @@ const Product = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   )
 }
