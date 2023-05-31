@@ -215,15 +215,16 @@ header {
 	display: flex;
 	gap: 15px;
 	align-items: center;
+	color: #222;
 }
 
-.containerr-buttonss-sociall a:link,
-.containerr-buttonss-sociall a:visited {
+.containerr-buttonss-sociall .ar:link,
+.containerr-buttonss-sociall .ar:visited {
 	color: #666;
 	font-size: 15px;
 }
 
-.containerr-buttonss-sociall a:hover {
+.containerr-buttonss-sociall .ar:hover {
 	color: #1bbeb4;
 }
 

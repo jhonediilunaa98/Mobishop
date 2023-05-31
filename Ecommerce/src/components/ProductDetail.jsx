@@ -9,7 +9,7 @@ const ProductDetail = (props) => {
 		<main className='mein'>
 			<div className="containerr-imgg">
 				<img
-					src={iphone}
+					src="https://tiendasishop.com/media/catalog/product/i/p/iphone_14_pro_silver_pdp_image_position-4_mxla_6.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:"
 					alt="imagen-producto"
 				/>
 			</div>
@@ -90,11 +90,11 @@ const ProductDetail = (props) => {
 				<div className="containerr-sociall">
 					<span>Compartir</span>
 					<div className="containerr-buttonss-sociall">
-						<a href="#"><i className="fa-solid fa-envelope"></i></a>
-						<a href="#"><i className="fa-brands fa-facebook"></i></a>
-						<a href="#"><i className="fa-brands fa-twitter"></i></a>
-						<a href="#"><i className="fa-brands fa-instagram"></i></a>
-						<a href="#"><i className="fa-brands fa-pinterest"></i></a>
+						<a className='ar' href="#"><i className="fa-solid fa-envelope"></i></a>
+						<a className='ar' href="#"><i className="fa-brands fa-facebook"></i></a>
+						<a className='ar' href="#"><i className="fa-brands fa-twitter"></i></a>
+						<a className='ar' href="#"><i className="fa-brands fa-instagram"></i></a>
+						<a className='ar' href="#"><i className="fa-brands fa-pinterest"></i></a>
 					</div>
 				</div>
 			</div>
