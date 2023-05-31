@@ -3,7 +3,16 @@ import { Link } from 'react-router-dom'
 
 const Nuevacuenta = () => {
 
-
+    const Usuarios = () => {
+        let [CrearCuenta ] = useState([]);
+        useEffect(() => {
+            const enviar = () => {
+                fetch('https://64769b539233e82dd53a2bb9.mockapi.io/registrer')
+                .then((respuesta) => resepuesta.json())
+                .then((data))
+            };
+        })
+    }
 
     return ( <>
             <main className='main-form'>
@@ -15,7 +24,7 @@ const Nuevacuenta = () => {
                     <h1 className='title'>Crear Cuenta</h1>
                     <form 
                         id='form-login'
-                        onSubmit={onSubmit}
+                        onSubmit={CrearCuenta}
                     >
                         <input 
                             type="text"
