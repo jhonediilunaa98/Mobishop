@@ -1,10 +1,26 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import './product.module.css'
+import Data from './Data.json'
+//import CardP from './CardP'
 import airpod from '../assets/AirPod 2nd Gen.jpg'
 import iphone from '../assets/iPhone-14.jpg'
 import apple from '../assets/apple-watch-pcq.jpg'
 import ipad from '../assets/ipad-pro.jpg'
+
+
+
+// function CardP(props) {
+//   return (
+//     <>
+//       <li>
+//         <h2>{props.el.title}</h2>
+//         <h2>{props.el.price}</h2>
+//       </li>
+      
+//     </>
+//   )
+// }
 
 
 const Product = () => {
@@ -37,9 +53,10 @@ const Product = () => {
               </h4>
               <p className="product-price">$299</p>
               <a className="product-btn" href="#">Buy Now</a>
-
             </div>
           </div>
+
+          
           <div className="product">
             <img src={apple} />
             <div className="product-info">
@@ -57,15 +74,26 @@ const Product = () => {
               </h4>
               <p className="product-price">$629*</p>
               <a className="product-btn" href="#">Buy Now</a>
-
-
-
-              
-
             </div>
           </div>
         </div>
+
       </section>
+
+
+      {/* <ul>
+        {Data.ProductosMobi.map((el, index) => (<CardP key={index} el={el} />))}
+      </ul> */}
+      
+         {/* <div className="product">
+            <img src={ipad} />
+            <div className="product-info">
+              <h4 className="product-title">iPan Pro
+              </h4>
+              <p className="product-price">$629*</p>
+              <a className="product-btn" href="#">Buy Now</a>
+            </div>
+          </div> */}
     </>
   )
 }
