@@ -1,24 +1,41 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from '../public/Logo.svg'; 
-import './Header.module.css'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Logo from '../public/Logo.svg';
+import './Header.module.css';
 
 const Header = () => {
-  return (
-    <header className='hero'>
-      <picture className='Logo'>
-      <img src={Logo} alt="Logo"/>
-      </picture>
-      <nav>
-          <Link to="/home" className='link'>Home</Link>
-          <Link to="/product" className='link'>Product</Link>
-          <Link to="/about" className='link'>About</Link>
-          <Link to="/contact" className='link'>Contact</Link>
-          <Link to="/login" className='link'>Login</Link>
-    </nav>
-    </header>
-  )
-}
+  const [isNavActive, setNavActive] = useState(false);
 
-export default Header
+  const toggleNav = () => {
+    setNavActive(!isNavActive);
+  };
+
+  return (
+      <header>
+        <Link to="/" className="logo-link">
+          <picture>
+          <img className="logo-img" src={Logo} alt="" />
+          </picture>
+          </Link>
+          <div className="header-right">
+        <nav className={isNavActive ? 'active' : ''}>
+          <ul className="header-links">
+            <Link to="/product">Productos</Link>
+            <Link to="/about">Nosotros</Link>
+            <Link to="/contact">Contacto</Link>
+         </ul>
+        </nav>
+        <div className="login">
+          <Link to="/login">Sign in</Link>
+        </div>
+        <div className="hamburger" onClick={toggleNav}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

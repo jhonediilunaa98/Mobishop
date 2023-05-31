@@ -1,44 +1,87 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-import './Home.module.css'
-//import airpod_home1 from '../assets/airpod_home1.jpeg'
-//import appleW_home_1 from '../assets/appleW_home_1.jpeg'
- import iphone_home1 from '../assets/iphone_home1.jpeg'
- import iphone_14 from '../assets/iphone_14.webp'
- import smart_1 from '../assets/smart_1.png'
+// 
+import './Home.module.css';
+import black_2 from '../assets/black_2.jpeg';
+import oferta_1 from '../assets/oferta_1.jpeg';
+import vide from '../assets/iPhone 15 Pro Max Trailer Official Design.mp4'
+
+
+
 
 
 const Home = () => {
   return (
-    <>
-      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={iphone_14} className="d-block w-100" alt="Iphone" height="500px" width="500px" />
-          </div>
-          <div className="carousel-item">
-            <img src={smart_1} className="d-block w-100" alt="Iphone" height="500px" width="400px"/>
-          </div>
-          <div className="carousel-item">
-            <img src={iphone_home1} className="d-block w-100" alt="Iphone" height="500px"  />
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-    </>
-  )
-}
+    <main>
+      <h2 id='tit'>Lo que deseas aca lo encuentras </h2>
+      <div className="card">
+    <p className='p'><span className='span'><img src= {black_2} /></span></p>
+    <p className='p'><span className='span'><iframe className='.video-container video' width="560" height="315" src={vide} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span></p>
+    <p className='p'><span className='span'><img src= {oferta_1} /></span></p>
+    </div>
 
-export default Home
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div style={{ textAlign: 'center', padding: '10px' }}>
+        <a href="#">
+          <img src="https://tiendasishop.com/media/wysiwyg/iconos/icono_Bopis1.png" style={{ width: '140px', height: '73px' }} alt="Compra Online Recoge en Tienda" />
+          <br />
+          <span>
+            Compra Online <br /> Recoge en Tienda en 1 hora
+          </span>
+        </a>
+      </div>
+
+      <div style={{ textAlign: 'center', padding: '10px' }}>
+        <a href="#">
+          <img src="https://tiendasishop.com/media/wysiwyg/iconos/iconos-colombia/800x800-24-horas-imagen.png" style={{ width: '140px', height: '73px' }} alt="Aplica para Bogotá" />
+          <br />
+          <span>
+            Aplica para Bogotá*
+          </span>
+        </a>
+      </div>
+
+      <div style={{ textAlign: 'center', padding: '10px' }}>
+        <a href="#">
+          <img src="https://tiendasishop.com/media/wysiwyg/plan0es3.png" style={{ width: '140px', height: '73px' }} alt="0% de interés con Davivienda" />
+          <br />
+          <span>
+            0% de interés<br />con Davivienda
+          </span>
+        </a>
+      </div>
+
+      <div style={{ textAlign: 'center', padding: '10px' }}>
+        <a href="#">
+          <img src="https://tiendasishop.com/media/wysiwyg/icono_Addi.png" style={{ width: '140px', height: '73px' }} alt="3 cuotas sin interés" />
+          <br />
+          <span>
+            3 cuotas<br />sin interés
+          </span>
+        </a>
+      </div>
+
+      <div style={{ textAlign: 'center', padding: '10px' }}>
+        <a href="#">
+          <img src="https://tiendasishop.com/media/wysiwyg/iconos/homegarantia3.png" style={{ width: '140px', height: '73px' }} alt="1 año de garantía" />
+          <br />
+          <span>
+            1 año<br />de garantía
+          </span>
+        </a>
+      </div>
+
+      <div style={{ textAlign: 'center', padding: '10px' }}>
+        <a href="#">
+          <img src="https://tiendasishop.com/media/wysiwyg/iconos/homeserviciotecnico5.png" style={{ width: '140px', height: '73px' }} alt="Servicio Técnico Certificado" />
+          <br />
+          <span>
+            Servicio Técnico<br />Certificado
+          </span>
+        </a>
+      </div>
+    </div>
+    
+    </main>
+  );
+};
+
+export default Home;

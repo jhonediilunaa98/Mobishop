@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import './product.module.css'
-import Footer from './Footer'
 import airpod from '../assets/AirPod 2nd Gen.jpg'
 import iphone from '../assets/iPhone-14.jpg'
 import apple from '../assets/apple-watch-pcq.jpg'
@@ -9,11 +8,17 @@ import ipad from '../assets/ipad-pro.jpg'
 
 
 const Product = () => {
+
   return (
     <>
       <section className="products">
         <h2 className="h2">Productos </h2>
-        <input className="inpu inp" name="text" placeholder="Buscar..." type="search"></input>
+        <article className='button'>
+        <button>Iphone 14</button>
+        <button>Iphone 14 Pro</button>
+        <button>Iphone 14 Pro Max</button>
+        <button>Iphone 15</button>
+        </article>
         <div className="all-products">
           <div className="product">
             <img src={airpod} />
@@ -53,11 +58,14 @@ const Product = () => {
               <p className="product-price">$629*</p>
               <a className="product-btn" href="#">Buy Now</a>
 
+
+
+              
+
             </div>
           </div>
         </div>
       </section>
-      <Footer />
     </>
   )
 }
