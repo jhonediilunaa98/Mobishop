@@ -1,7 +1,12 @@
-import { useState, useEffect } from 'react'
-import './CardP.module.css'
+
+import React, { useState, useEffect } from 'react';
+import './CardP.module.css';
+import ProductDetails from './ProductDetail';
+
 const CardP = () => {
-  let [data, set] = useState([]);
+  const [data, set] = useState([]);
+  const [selectedItem, setSelectedItem] = useState(null);
+
   useEffect(() => {
     const obtener = () => {
       return fetch(
@@ -11,28 +16,43 @@ const CardP = () => {
         .then((data) => set(data))
         .catch((err) => console.error(err));
     };
+
     obtener();
     return () => set([]);
   }, []);
+
+  const showProductDetails = (item) => {
+    setSelectedItem(item);
+  };
+
+  const hideProductDetails = () => {
+    setSelectedItem(null);
+  };
+
   return (
-    <ul className='todos'>
-      {data.map((item) => (
-        // eslint-disable-next-line react/jsx-key
-        <li key = {item.id}>
-        <div className='product'>
-        <img src={item.img} />
-        <div className="product-info">
-        <h2 className='h22'>{item.title}</h2>
-        <p className="p">${item.price}</p>
-        <a className="product-btn" href="#">Buy Now</a>
+    <div>
+      <ul className='todos'>
+        {data.map((item) => (
+          <li key={item.id}>
+            <div className='product' onClick={() => showProductDetails(item)}>
+              <img src={item.img} alt={item.title} />
+              <div className="product-info">
+                <h2 className='h22'>{item.title}</h2>
+                <p className="p">${item.price}</p>
+                <a className="product-btn" href="#">Buy Now</a>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+
+      {selectedItem && (
+        <div className="overlay" onClick={hideProductDetails}>
+          <ProductDetails item={selectedItem} />
         </div>
-        </div>
-       
-        </li>
-      ))}
-    </ul>
+      )}
+    </div>
   );
-}
-//<li>{props.el.title}</li>
-export default CardP
-//<li>key = {item.id}<h2>{item.title}</h2><p>{item.price}</p><picture>{item.img}</picture></li>
+};
+
+export default CardP;
