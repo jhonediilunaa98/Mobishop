@@ -1,8 +1,8 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer/Footer.module.css';
 import Logo from '../public/MobiShopBlanco.svg';
+import { Button } from './Button';
 import {FontAwesomeIcon} from '@Fortawesome/react-fontawesome';
 import {faSquareInstagram,
     faFacebook,
@@ -17,6 +17,27 @@ const Footer = () => {
       <picture>
           <img src={Logo} alt="Logo" className={styles.logo} />
         </picture>
+        <section className={styles['footer-subscription']}>
+        <p className={styles['footer-subscription-heading']}>
+          Suscribete y recibe el 10% OFF
+        </p>
+        <h6 className={styles['footer-subscription-text']}>
+          Puedes anular la suscripción en cualquier momento
+        </h6>
+        <div className={styles['input-areas']}>
+          <form>
+            <div className={styles['input-row']}>
+                <input
+                  className={styles['footer-input']}
+                  name="email"
+                  type="email"
+                  placeholder="Escribe tu Email"
+                />
+                <Button buttonStyle="btn--outline">Subscrirse</Button>
+              </div>
+          </form>
+        </div>
+      </section>
         <ul className="RedesSociales">
       <FontAwesomeIcon icon={faSquareInstagram}/>
       <FontAwesomeIcon icon={faFacebook}/>
