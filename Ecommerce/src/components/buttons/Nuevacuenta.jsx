@@ -1,38 +1,9 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Footer from '../Footer'
 
 const Nuevacuenta = () => {
 
-    // State para iniciar sesion
-    const [ usuario, guardarUsuario ] = useState({
-        nombre: '',
-        email: '',
-        password: '',
-        confirmar: ''
-    })
 
-    //Estraer Usuario
-    const { nombre, email, password, confirmar } = usuario;
-
-    const onChange = e => {
-        guardarUsuario({
-            ...usuario,
-            [e.target.name] : e.target.value
-        })
-    }
-
-    // Cuando quiera iniciar sesion
-    const onSubmit = e => {
-        e.preventDefault();
-        // Validar Campos vacios
-
-        // Password min 6 caracteres
-
-        // Los 2 password components
-
-        // Pasarlo al action
-    }
 
     return ( <>
             <main className='main-form'>
@@ -52,7 +23,6 @@ const Nuevacuenta = () => {
                             placeholder='Tu Nombre'
                             id='email'
                             value={nombre}
-                            onChange={onChange}
                          />
                         <input 
                             type="email"
@@ -60,7 +30,6 @@ const Nuevacuenta = () => {
                             placeholder='Tu Email'
                             id='email'
                             value={email}
-                            onChange={onChange}
                          />
                         
                         <input 
@@ -69,18 +38,8 @@ const Nuevacuenta = () => {
                             placeholder='Tu Contraseña'
                             id='password'
                             value={password}
-                            onChange={onChange}
                          />
 
-                        <input 
-                            type="password"
-                            name='confirmar'
-                            placeholder='Repite tu Contraseña'
-                            id='password'
-                            value={confirmar}
-                            onChange={onChange}
-                         />
-                        
                         <input 
                             type="submit"
                             className='btn-submit'
@@ -91,8 +50,7 @@ const Nuevacuenta = () => {
                     
                 </section>
                 
-            </main>  
-            <Footer />         
+            </main>        
             </>
      );
 }
