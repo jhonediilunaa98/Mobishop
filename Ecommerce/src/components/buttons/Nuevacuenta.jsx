@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer'
 
@@ -13,7 +13,7 @@ const Nuevacuenta = () => {
     })
 
     //Estraer Usuario
-    const { nombre, email, password, confirmar } = usuario;
+    const { nombre, email, password } = usuario;
 
     const onChange = e => {
         guardarUsuario({
@@ -72,15 +72,6 @@ const Nuevacuenta = () => {
                             onChange={onChange}
                          />
 
-                        <input 
-                            type="password"
-                            name='confirmar'
-                            placeholder='Repite tu Contraseña'
-                            id='password'
-                            value={confirmar}
-                            onChange={onChange}
-                         />
-                        
                         <input 
                             type="submit"
                             className='btn-submit'
