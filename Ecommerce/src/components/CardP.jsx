@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import './CardP.module.css'
 
 
 
@@ -19,13 +20,24 @@ const CardP = () => {
     return () => set([]);
   }, []);
   return (
-    <ul>
+    <ul className='todos'>
       {data.map((item) => (
         // eslint-disable-next-line react/jsx-key
-        <li>key = {item.id}<h2>{item.title}</h2><p>{item.price}</p><picture>{item.img}</picture></li>
+        <li key = {item.id}>
+        <div className='product'>
+        <img src={item.img} />
+        <div className="product-info">
+        <h2 className='h22'>{item.title}</h2>
+        <p className="p">${item.price}</p>
+        <a className="product-btn" href="#">Buy Now</a>
+        </div>
+        </div>
+       
+        </li>
       ))}
     </ul>
   );
 }
 //<li>{props.el.title}</li>
 export default CardP
+//<li>key = {item.id}<h2>{item.title}</h2><p>{item.price}</p><picture>{item.img}</picture></li>

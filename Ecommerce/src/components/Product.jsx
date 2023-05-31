@@ -14,18 +14,18 @@ const Product = () => {
 
   return (
     <>
-      <section className="products">
+      <section className="prod">
         <h2 className="h2">Productos </h2>
-        <article className='button'>
-        <button>Iphone 14</button>
-        <button>Iphone 14 Pro</button>
-        <button>Iphone 14 Pro Max</button>
-        <button>Iphone 15</button>
+        <article className='buttonn'>
+        <button className='btn2'>Iphone 14</button>
+        <button className='btn2'>Iphone 14 Pro</button>
+        <button className='btn2'>Iphone 14 Pro Max</button>
+        <button className='btn2'>Iphone 15</button>
         </article>
         <div className="all-products">
         </div>
       </section>
-      <CardP />
+      <CardP className="todos" />
     </>
   )
 }

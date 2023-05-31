@@ -1,11 +1,11 @@
-.products{
+/* .products{
 	font-size: 1.7rem;
 	font-family: 'Poppins','Merriweather Sans', sans-serif;
 	background: var(--color-6);
 	color: #faf6f6;
 	padding: 4rem;
-}
-.h2{
+} */
+/* .h2{
 	text-align: center;
 	margin-bottom: 5rem;
 	font-size: 4rem;
@@ -68,6 +68,27 @@
 
 .product a:hover{
 	transform: scale(1.1);
+} */
+.produ{
+	padding: 0;
+	margin: 0;
+}
+.h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 3rem;
+    color: var(--color-2);
+    font-family: 'Poppins';
+	margin: 2rem;
+}
+
+.todos{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;;
+	
+
 }
 
 .inp {
@@ -91,7 +112,7 @@
   .inpu:hover {
     outline: 1px solid var(--color-4);
   }
-  .button{
+  .buttonn{
 	display: flex;
     justify-content: center;
     gap: 1rem;
@@ -100,7 +121,7 @@
 	
   }
 
-  button {
+  .btn2 {
 	width: 10em;
 	position: relative;
 	height: 3.5em;
@@ -114,19 +135,19 @@
 	font-weight: bold;
   }
   
-  button::after {
+  .btn2::after {
 	content: "";
 	position: absolute;
 	top: -10px;
 	left: 3%;
 	width: 95%;
 	height: 40%;
-	background-color: var(--color-6);
+	background-color: white;
 	transition: 0.5s;
 	transform-origin: center;
   }
   
-  button::before {
+  .btn2::before {
 	content: "";
 	transform-origin: center;
 	position: absolute;
@@ -134,14 +155,14 @@
 	left: 3%;
 	width: 95%;
 	height: 40%;
-	background-color: var(--color-6);
+	background-color: white;
 	transition: 0.3s;
   }
   
-  button:hover::before, button:hover::after {
+  .btn2:hover::before, .btn2:hover::after {
 	transform: scale(0)
   }
   
-  button:hover {
+  .btn2:hover {
 	box-shadow: inset 0px 0px 25px #1479EA;
   }
