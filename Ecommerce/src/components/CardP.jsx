@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react'
 import './CardP.module.css'
-
-
-
-
-
 const CardP = () => {
   let [data, set] = useState([]);
   useEffect(() => {

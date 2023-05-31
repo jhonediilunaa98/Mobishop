@@ -21,6 +21,7 @@ const Header = () => {
         <nav className={isNavActive ? 'active' : ''}>
           <ul className="header-links">
             <Link to="/product">Productos</Link>
+            {/* <Link to="/detal">Productos</Link>  */}
             <Link to="/about">Nosotros</Link>
             <Link to="/contact">Contacto</Link>
          </ul>
