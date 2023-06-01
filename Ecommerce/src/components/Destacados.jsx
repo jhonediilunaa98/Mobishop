@@ -12,9 +12,10 @@ function Destacados() {
           <span className='span'><img src={black_2} alt="Black 2" /></span>
         </div>
         <div className='p'>
-          <span className='span'>
-            <iframe className='video-container' title="iPhone 15 Pro Max" src={vide} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </span>
+          <span className='span'></span>
+        </div>
+        <div className='p'>
+          <span className='span'><img src={oferta_1} alt="Oferta 1" /></span>
         </div>
         <div className='p'>
           <span className='span'><img src={oferta_1} alt="Oferta 1" /></span>
