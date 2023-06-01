@@ -7,4 +7,5 @@
 @import url('./components/Footer/Footer.module.css');
 @import url('./components/Product.module.css');
 @import url('./components/CardP.module.css');
-@import url('./components/ProductDetail.module.css')
+@import url('./components/ProductDetail.module.css');
+@import url('./components/BeneficiosMobi.module.css');

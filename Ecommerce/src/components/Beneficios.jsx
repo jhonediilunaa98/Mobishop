@@ -1,11 +1,11 @@
 import React from 'react';
-import './Beneficios.module.css';
 import tienda from '../assets/tienda.svg';
 import interes from '../assets/interes.svg';
 import addi from '../assets/addi.svg';
 import garantia from '../assets/garantia.svg';
 import tecnico from '../assets/tecnico.svg';
 import horas from '../assets/horas.svg';
+import './BeneficiosMobi.module.css';
 
 function Beneficios() {
   return (
