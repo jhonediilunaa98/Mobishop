@@ -1,31 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext } from "react";
 import { Link } from 'react-router-dom'
-import Footer from '../Footer'
+import UserContext from "../context/UserContext";
 
 const Login = () => {
-
-    // State para iniciar sesion
-    const [ usuario, guardarUsuario ] = useState({
-        email: '',
-        password: ''
-    })
-
-    //Estraer Usuario
-    const { email, password } = usuario;
-
-    const onChange = e => {
-        guardarUsuario({
-            ...usuario,
-            [e.target.name] : e.target.value
-        })
-    }
-
-    // Cuando quiera iniciar sesion
-    const onSubmit = e => {
-        e.preventDefault();
-        // Validar Campos vacios
-        // Pasarlo al action
-    }
+    const { login, userError, user, userSuccess } = useContext(UserContext);
+    const enviar = (evento) => {
+      evento.preventDefault();
+      const { email, password } = evento.target.elements;
+      console.log(email.value, password.value);
+      login(email.value, password.value);
+      if (user) {
+        return alert("bienvenido")
+      }
+    };
 
     return ( <>
             <main className='main-form'>
@@ -37,15 +24,13 @@ const Login = () => {
                     <h1 className='title'>Iniciar Sesión</h1>
                     <form 
                         id='form-login'
-                        onSubmit={onSubmit}
+                        onSubmit={enviar}
                     >
                         <input 
                             type="email"
                             name='email'
                             placeholder='Tu Email'
                             id='email'
-                            value={email}
-                            onChange={onChange}
                          />
                         
                         <input 
@@ -53,22 +38,22 @@ const Login = () => {
                             name='password'
                             placeholder='Tu Contraseña'
                             id='password'
-                            value={password}
-                            onChange={onChange}
                          />
                         
                         <input 
                             type="submit"
                             className='btn-submit'
-                            value='Iniciar Sesión'
                          />
                          <Link to={'/nuevacuenta'} className='new'>Crear Cuenta</Link>
                     </form>
-                    
+                    {userError ? (
+                    <p>{userError}</p>
+                    ) : userSuccess ? (
+                    <p>{userSuccess}</p>
+                    ) : null}
                 </section>
                 
-            </main>  
-            <Footer />         
+            </main>       
             </>
      );
 }

@@ -4,12 +4,13 @@
   outline: none;
   border: none;
   cursor: pointer;
+  margin: 10px;
 }
 
 .btn--primary {
-  background-color: var(--color-3);
+  background-color: transparent;
   color: var(--color-6);
-  border: 1px solid var(--color-3);
+  border: 1px solid var(--color-6);
   border-radius: 300px;
 }
 

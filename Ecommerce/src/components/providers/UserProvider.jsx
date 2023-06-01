@@ -3,18 +3,18 @@ import UserContext from "../context/UserContext";
 
 const UserProvider = ({ children }) => {
   const usuarios = [
-    { username: "", email: "", password: "" },
+    { email: "correo@gmail.com", password: "password" },
   ];
   const [user, setUser] = useState(null);
   const [userError, setUserError] = useState(null);
   const [userSuccess, setUserSuccess] = useState(null);
-  const login = (email, password) => {
+  const login = (email, password) => { 
     fetch("https://64769b539233e82dd53a2bb9.mockapi.io/registrer", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username: "Kevin", email: "coreo@gmail.com", password: "password"}, null, 3),
+      body: JSON.stringify({ email: email, password: password}, null, 2),
     })
       .then((respuesta) => respuesta.json())
       .then((usuarios) => {
@@ -49,7 +49,7 @@ const UserProvider = ({ children }) => {
   const loginAsync = async (email, password) => {
     try {
       const consulta = await fetch(
-        "https://646d4e359c677e232189e67c.mockapi.io/users"
+        "https://64769b539233e82dd53a2bb9.mockapi.io/registrer"
       );
       const usuarios = await consulta.json();
       let encontrado = usuarios.find((usuario) => usuario.email == email);

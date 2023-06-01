@@ -3,15 +3,11 @@ import { Link } from 'react-router-dom'
 import UserContext from "../context/UserContext";
 
 const Nuevacuenta = () => {
-  const { login, userError, user, userSuccess } = useContext(UserContext);
+  const { userError, userSuccess } = useContext(UserContext);
   const enviar = (evento) => {
     evento.preventDefault();
     const { username, email, password } = evento.target.elements;
     console.log(username.value, email.value, password.value);
-    login(username.value, email.value, password.value);
-    if (user) {
-      // redireccion
-    }
   };
 
     return ( <>
