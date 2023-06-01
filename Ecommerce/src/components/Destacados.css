@@ -97,7 +97,8 @@
 	text-align: center;
 	margin-bottom: 30px;
   background-color: var(--color-6);
-  padding: 100px 50px 100px 50px;
+  padding: 100px;
+  margin: 0;
 }
 
 .cardd-listt-productss {
