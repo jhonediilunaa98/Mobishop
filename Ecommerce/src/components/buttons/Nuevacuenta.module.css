@@ -27,7 +27,10 @@
         justify-content: center;
         width: 50%;
         height: 87vh;
-        background-color: var(--color-2);
+        background-image: url('https://previews.123rf.com/images/eugenius777/eugenius7771612/eugenius777161200025/69350504-fondo-geom%C3%A9trico-abstracto-de-tonos-marrones-rombo-y-formas-cuadradas.jpg');
+        background-repeat: none;
+        background-position: center center;
+        background-size: cover;
     }
     
 
