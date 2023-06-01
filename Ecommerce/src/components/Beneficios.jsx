@@ -1,12 +1,18 @@
 import React from 'react';
 import './Beneficios.module.css';
+import tienda from '../assets/tienda.svg';
+import interes from '../assets/interes.svg';
+import addi from '../assets/addi.svg';
+import garantia from '../assets/garantia.svg';
+import tecnico from '../assets/tecnico.svg';
+import horas from '../assets/horas.svg';
 
 function Beneficios() {
   return (
     <div className="button-container">
       <div className="button-item">
         <a href="#">
-          <img src="https://tiendasishop.com/media/wysiwyg/iconos/icono_Bopis1.png" alt="Compra Online Recoge en Tienda" />
+        <img src={tienda}  className="iconos-beneficios" alt="Compra Online Recoge en Tienda" />
           <div>
             <h3 className="h15">Compra Online Recoge en Tienda en 1 hora</h3>
           </div>
@@ -15,7 +21,7 @@ function Beneficios() {
 
       <div className="button-item">
         <a href="#">
-          <img src="https://tiendasishop.com/media/wysiwyg/iconos/iconos-colombia/800x800-24-horas-imagen.png" alt="Aplica para Bogotá" />
+        <img src={horas}  className="iconos-beneficios" alt="Aplica para Bogotá" />
           <div>
             <h3>Aplica para Bogotá*</h3>
           </div>
@@ -24,7 +30,7 @@ function Beneficios() {
 
       <div className="button-item">
         <a href="#">
-          <img src="https://tiendasishop.com/media/wysiwyg/plan0es3.png" alt="0% de interés con Davivienda" />
+        <img src={interes}  className="iconos-beneficios" alt="0% de interés con Davivienda" />
           <div>
             <h3 className="h15">0% de interés con Davivienda</h3>
           </div>
@@ -33,7 +39,7 @@ function Beneficios() {
 
       <div className="button-item">
         <a href="#">
-          <img src="https://tiendasishop.com/media/wysiwyg/icono_Addi.png" alt="3 cuotas sin interés" />
+        <img src={addi} className="iconos-beneficios" alt="3 cuotas sin interés" />
           <div>
             <h3 className="h15">3 cuotas sin interés</h3>
           </div>
@@ -42,7 +48,8 @@ function Beneficios() {
 
       <div className="button-item">
         <a href="#">
-          <img src="https://tiendasishop.com/media/wysiwyg/iconos/homegarantia3.png" alt="1 año de garantía" />
+            <h3 className="h15">1 año de garantía</h3>
+            <img src={garantia} className="iconos-beneficios" alt="1 año de garantía" />
           <div>
             <h3 className="h15">1 año de garantía</h3>
           </div>
@@ -51,7 +58,7 @@ function Beneficios() {
 
       <div className="button-item">
         <a href="#">
-          <img src="https://tiendasishop.com/media/wysiwyg/iconos/homeserviciotecnico5.png" alt="Servicio Técnico Certificado" />
+        <img src={tecnico} className="iconos-beneficios" alt="Servicio Técnico Certificado" />
           <div>
             <h3 className="h15">Servicio Técnico Certificado</h3>
           </div>
