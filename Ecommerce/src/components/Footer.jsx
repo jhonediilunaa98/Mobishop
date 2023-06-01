@@ -46,7 +46,7 @@ const Footer = () => {
       </ul>
       </section>
         <nav className={styles['footer-nav']}>
-              <Link to="/home" className={styles.link}>Home</Link>
+              <Link to="/" className={styles.link}>Home</Link>
               <Link to="/product" className={styles.link}>Product</Link>
               <Link to="/about" className={styles.link}>About</Link>
               <Link to="/contact" className={styles.link}>Contact</Link>
