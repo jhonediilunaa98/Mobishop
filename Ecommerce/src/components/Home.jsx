@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroSection from './HeroSection';
 import Destacados from './Destacados';
+import Banner from './Banner';
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <>
     <HeroSection />
     <Destacados />
+    <Banner />
     </>
     
   );

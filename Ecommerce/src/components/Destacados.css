@@ -1,9 +1,10 @@
 
-h2 {
+#h22 {
   text-align: center;
   margin-top: 0px;
-  color: var(--color-6);
+  color: var(--color-1);
   font-weight: bolder;
+  font-size: 30px;
 }
 
 .card {
@@ -85,6 +86,70 @@ h2 {
 .button-item span {
   font-size: 14px;
   text-align: center;
+}
+
+/*
+*/
+
+
+
+.containerr-relatedd-productss{
+	text-align: center;
+	margin-bottom: 30px;
+  background-color: var(--color-6);
+  padding: 100px 50px 100px 50px;
+}
+
+.cardd-listt-productss {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 25px;
+	
+}
+
+.cardd {
+	cursor: pointer;
+}
+
+.cardd-imgg {
+	background: transparent;
+	margin-bottom: 15px;
+}
+
+.cardd-imgg .imen {
+	height: 400px;
+	object-fit: cover;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.infoo-cardd {
+	display: flex;
+	justify-content: space-between;
+}
+
+.textt-productt {
+	color: #252525;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+.textt-productt h3{
+    color: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+}
+
+.textt-productt h3:hover{
+    color: #1bbeb4;
+}
+
+.textt-productt p{
+    color: #666;
+    font-size: 13px;
+}
+
+.textt-productt p:hover{
+    color: #1bbeb4;
 }
 
 
