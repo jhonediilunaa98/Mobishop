@@ -80,6 +80,32 @@ nav .header-links a.active {
   background: var(--color-2);
 }
 
+.cartt{
+  position: relative;
+  cursor: pointer;
+  padding: 5px
+  margin 5px;
+}
+.cartt .FontAwesomeIcon {
+  width: 20px;
+  height: 20px;
+}
+.cartt .spa{
+  position: absolute;
+  top: .1rem;
+  right: -1.5rem;
+  width: 2.5;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: crimson;
+}
 
 @media only screen and (max-width: 1000px) {
   header {
