@@ -12,7 +12,7 @@ function Destacados() {
           <span className='span'><img src={black_2} alt="Black 2" /></span>
         </div>
         <div className='p'>
-          <span className='span'></span>
+          <span className='span'><img src={black_2} alt="Black 2" /></span>
         </div>
         <div className='p'>
           <span className='span'><img src={oferta_1} alt="Oferta 1" /></span>
