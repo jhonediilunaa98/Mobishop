@@ -1,4 +1,4 @@
-.button-container {
+.ben-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,7 +7,7 @@
   max-width: 20px;
 }
 
-.button-item {
+.ben-item {
   text-align: center;
   color: #c21212;
   font-size: 16px;
