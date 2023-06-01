@@ -165,12 +165,9 @@ const ProductDetail = (props) => {
 				</div>
 			</div>
 		</section>
-		{/* <script
-			src="https://kit.fontawesome.com/81581fb069.js"
-			crossorigin="anonymous"
-		></script>
-		<script src="index.js"></script> */}
 	
+
+		<script src="index.js"></script> 
     </div>
   )
 }

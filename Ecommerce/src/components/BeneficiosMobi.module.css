@@ -1,0 +1,36 @@
+.beneficio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--color-4);
+  padding: 50px;
+}
+
+.ben-item {
+  text-align: center;
+  color: var(--color-3);
+  font-size: 16px;
+  width: 20%;
+  padding: 20px;
+  background-color: var(--color-6);
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px rgba(33, 33, 33, 0.112);
+  transition: background-color 0.3s ease;
+}
+
+.ben-item:hover {
+  background-color: var(--color-5);
+}
+
+
+#h155 {
+  color: var(--color-2);
+  font-size: 12px;
+}
+
+.ben-item img {
+  width: 80px;
+  height: 90px;
+}
