@@ -6,7 +6,7 @@ video {
   z-index: -1;
 }
 
-.hero-container {
+.heroo-containerr {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -18,7 +18,7 @@ video {
   padding-top: 0%;
 }
 
-.hero-container > h1 {
+.heroo-containerr > .h11 {
   color: var(--color-6);
   font-size: 70px;
   font-weight: bold;
@@ -26,41 +26,41 @@ video {
   text-align: center;
 }
 
-.hero-container > h2 {
+.heroo-containerr > .h2h2 {
   color: var(--color-6);
 }
 
-.hero-btns {
+.heroo-btnss {
   margin-top: 32px;
 }
 
-.hero-btns .btn {
+.heroo-btnss .btnn {
   margin: 6px;
 }
 
 @media screen and (max-width: 960px) {
-  .hero-container > h1 {
+  .heroo-containerr > .h11 {
     font-size: 70px;
     margin-top: -150px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hero-container > h1 {
+  .heroo-containerr > .hh1 {
     font-size: 50px;
     margin-top: -100px;
   }
 
-  .hero-container > p {
+  /* .heroo-containerr > p {
     font-size: 30px;
-  }
+  } */
 
-  .btn-mobile {
+  .btnn-mobilee {
     display: block;
     text-decoration: none;
   }
 
-  .btn {
+  .btnn {
     width: 100%;
   }
 }
