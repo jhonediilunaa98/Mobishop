@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import UserContext from "../context/UserContext";
 
 const Login = () => {
-    const { login, userError, user, userSuccess } = useContext(UserContext);
-    const enviar = (evento) => {
+    const { loginAsync, userError, user, userSuccess } = useContext(UserContext);
+    const iniciar = (evento) => {
       evento.preventDefault();
       const { email, password } = evento.target.elements;
       console.log(email.value, password.value);
-      login(email.value, password.value);
+      loginAsync(email.value, password.value);
       if (user) {
-        return alert("bienvenido")
+        
       }
     };
 
@@ -24,7 +24,7 @@ const Login = () => {
                     <h1 className='title'>Iniciar Sesión</h1>
                     <form 
                         id='form-login'
-                        onSubmit={enviar}
+                        onSubmit={iniciar}
                     >
                         <input 
                             type="email"
@@ -45,12 +45,12 @@ const Login = () => {
                             className='btn-submit'
                          />
                          <Link to={'/nuevacuenta'} className='new'>Crear Cuenta</Link>
+                         {userError 
+                    ? (<p className="Msg">{userError}</p>) 
+                    : userSuccess 
+                    ? (<p className="Msg">{userSuccess}</p>)
+                    : null}
                     </form>
-                    {userError ? (
-                    <p>{userError}</p>
-                    ) : userSuccess ? (
-                    <p>{userSuccess}</p>
-                    ) : null}
                 </section>
                 
             </main>       
