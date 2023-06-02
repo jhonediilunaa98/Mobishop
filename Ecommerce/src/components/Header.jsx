@@ -3,9 +3,17 @@ import { Link } from 'react-router-dom';
 import Logo from '../public/Logo.svg';
 import './Header.module.css';
 import caart from '../assets/caart.svg';
+import UserContext from '../context/UserContext';
+import { useContext } from 'react';
 
 const Header = () => {
   const [isNavActive, setNavActive] = useState(false);
+
+  const { user } = useContext(UserContext);
+
+  const Logout = () => {
+    window.location.reload();
+  };
 
   const toggleNav = () => {
     setNavActive(!isNavActive);
@@ -39,7 +47,11 @@ const Header = () => {
           </div>
         </nav>
         <div className="login">
-          <Link to="/login">Sign in</Link>
+        {user ? (
+            <button onClick={Logout}>Cerrar Sesión</button>
+            ) : (
+            <Link to="/login">Iniciar Sesión</Link>
+        )}
         </div>
         <div className="hamburger" onClick={toggleNav}>
           <div></div>
