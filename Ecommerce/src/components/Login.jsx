@@ -44,7 +44,7 @@ const Login = () => {
                             className='btn-submit'
                          />
                          {user 
-                         ? <Link to={'/'} className='Msg'>Ir a compras</Link>
+                         ? <Link to={'/'} className='Msg'>Ir a home</Link>
                          : <Link to={'/nuevacuenta'} className='new'>¿No tienes una cuenta?</Link>
                          }
                          {userError 
