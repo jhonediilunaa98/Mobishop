@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../public/Logo.svg';
 import './Header.module.css';
-import {FontAwesomeIcon} from '@Fortawesome/react-fontawesome';
-import {faSquareInstagram} from '@Fortawesome/free-brands-svg-icons';
-
+import caart from '../assets/caart.svg';
 
 const Header = () => {
   const [isNavActive, setNavActive] = useState(false);
@@ -14,24 +12,31 @@ const Header = () => {
   };
 
   return (
-      <header>
-        <Link to="/" className="logo-link">
-          <picture>
+    <header>
+      <Link to="/" className="logo-link">
+        <picture>
           <img className="logo-img" src={Logo} alt="" />
-          </picture>
-          </Link>
-          <div className="header-right">
+        </picture>
+      </Link>
+      <div className="header-right">
         <nav className={isNavActive ? 'active' : ''}>
           <ul className="header-links">
-            <Link to="/product">Productos</Link>
-            {/* <Link to="/detal">Productos</Link>  */}
-            <Link to="/about">Nosotros</Link>
-            <Link to="/contact">Contacto</Link>
-            </ul>
-            <div className='cartt'>
-                <FontAwesomeIcon  icon={faSquareInstagram} className='FontAwesomeIcon' />
-                <span className='spa itemm__total'>0</span>
-            </div>
+            <li>
+              <Link to="/product">Productos</Link>
+            </li>
+            <li>
+              <Link to="/about">Nosotros</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contacto</Link>
+            </li>
+          </ul>
+          <div className="cartt">
+            <Link to="/cart" className="cart-link">
+              <img className="cart-icon" src={caart} alt="Carrito de Compra" />
+              <span className="spa itemm__total">0</span>
+            </Link>
+          </div>
         </nav>
         <div className="login">
           <Link to="/login">Sign in</Link>

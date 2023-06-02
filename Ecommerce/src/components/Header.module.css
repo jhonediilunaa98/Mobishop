@@ -80,31 +80,34 @@ nav .header-links a.active {
   background: var(--color-2);
 }
 
-.cartt{
+.cartt {
   position: relative;
   cursor: pointer;
-  padding: 5px
-  margin 5px;
+  padding: 10px;
+  margin: 10px;
+  color: aqua;
 }
-.cartt .FontAwesomeIcon {
-  width: 20px;
-  height: 20px;
+
+.cartt .cart-icon {
+  width: 30px;
+  height: 30px;
 }
-.cartt .spa{
+
+.cartt .spa {
   position: absolute;
-  top: .1rem;
-  right: -1.5rem;
-  width: 2.5;
-  height: 2.5rem;
+  top: 1.5rem;
+  right: -0.1rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 0rem;
-  font-size: 1.5rem;
+  padding: 0;
+  font-size: 0.5rem;
   font-weight: 700;
-  background-color: crimson;
+  background-color: var(--color-3);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -138,6 +141,7 @@ nav .header-links a.active {
     display: block;
   }
 }
+
 
 @media only screen and (max-width: 500px) {
   nav .login-signup {
