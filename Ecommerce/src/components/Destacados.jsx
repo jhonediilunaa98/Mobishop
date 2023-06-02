@@ -3,6 +3,7 @@ import './Destacados.css';
 import camara from '../assets/camara.svg';
 import dynamic from '../assets/dynamic.svg';
 import chip from '../assets/chip.svg';
+import sos from '../assets/sos.svg';
 
 function Destacados() {
   return (
@@ -12,15 +13,18 @@ function Destacados() {
           <span className='span'><img src={chip} alt="chip"/></span>
         </div>
         <div className='p'>
-          <span className='span'><img src={camara} alt="camara" /></span>
+          <span className='span'><img src={sos} alt="sos" /></span>
+        </div>
+				<div className='p'>
+          <span className='span'><img src={camara} alt="camara pro" /></span>
         </div>
         <div className='p'>
-          <span className='span'><img src={dynamic} alt="dynamic" /></span>
+          <span className='span'><img src={dynamic} alt="dynamic island" /></span>
         </div>
       </div>
 
 <section className="containerr-relatedd-productss">
-			<h2 id='h22'>Productos Relacionados</h2>
+			<h2 id='h22'>Productos Destacados</h2>
 			<div className="cardd-listt-productss">
 				<div className="cardd">
 					<div className="cardd-imgg">
