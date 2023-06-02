@@ -35,7 +35,7 @@ const Header = () => {
           <img className="logo-img" src={Logo} alt="" />
         </picture>
       </Link>
-      <div className="header-right">
+      <article className="header-right">
         <nav className={isNavActive ? 'active' : ''}>
           <ul className="header-links">
             <li>
@@ -48,26 +48,26 @@ const Header = () => {
               <Link to="/contact">Contacto</Link>
             </li>
           </ul>
-          <div className="cartt" >
+          <article className="cartt" >
             <Link to="" className="cart-link" onClick={toogleMenu}>
               <img className="cart-icon" src={caart} alt="Carrito de Compra" />
               <span className="spa itemm__total">{carrito.length}</span>
             </Link>
-          </div>
+          </article>
         </nav>
-        <div className="login">
+        <article className="login">
         {user ? (
             <button onClick={Logout} className='alert'>Cerrar Sesión</button>
             ) : (
             <Link to="/login" className='alert' >Iniciar Sesión</Link>
         )}
-        </div>
-        <div className="hamburger" onClick={toggleNav}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
+        </article>
+        <article className="hamburger" onClick={toggleNav}>
+          <artilcle></artilcle>
+          <artilcle></artilcle>
+          <artilcle></artilcle>
+        </article>
+      </article>
     </header>
   );
 };
