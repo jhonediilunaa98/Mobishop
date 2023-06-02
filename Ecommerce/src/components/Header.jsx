@@ -49,7 +49,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="cartt" >
-            <Link to="/carrito" className="cart-link" onClick={toogleMenu}>
+            <Link to="" className="cart-link" onClick={toogleMenu}>
               <img className="cart-icon" src={caart} alt="Carrito de Compra" />
               <span className="spa itemm__total">{carrito.length}</span>
             </Link>

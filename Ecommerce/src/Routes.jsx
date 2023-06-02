@@ -44,7 +44,7 @@ const App = createBrowserRouter(
       element: <Nuevacuenta />
     },
     {
-      path: "/carrito",
+      path: "",
       element: <Carrito />
     },
       ]
