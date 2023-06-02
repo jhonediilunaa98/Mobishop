@@ -15,6 +15,13 @@
     color: var(--color-2);
 }
 
+.description-form {
+    color: var(--color-1);
+    font-size: larger;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
 @media (min-width: 768px) {
     .main-form {
         display: flex;

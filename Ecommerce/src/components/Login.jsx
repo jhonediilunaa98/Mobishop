@@ -20,6 +20,7 @@ const Login = () => {
                 </section>
                 <section className='section-2'>
                     <h1 className='title'>Iniciar Sesión</h1>
+                    <p className='description-form'>Inicia Sesión para comprar</p>
                     <form 
                         id='form-login'
                         onSubmit={iniciar}
@@ -43,7 +44,7 @@ const Login = () => {
                             className='btn-submit'
                          />
                          {user 
-                         ? <Link to={'/'} className='Msg'>Go to home</Link>
+                         ? <Link to={'/'} className='Msg'>Ir a compras</Link>
                          : <Link to={'/nuevacuenta'} className='new'>¿No tienes una cuenta?</Link>
                          }
                          {userError 

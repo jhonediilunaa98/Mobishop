@@ -8,11 +8,25 @@
     height: 100%;
 }
 
-.title {
-    padding: 15px;
+.description-form {
+    color: var(--color-1);
+    font-size: larger;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.alerta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-form {
+    padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--color-2);
+    margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -26,7 +40,7 @@
         display: flex;
         justify-content: center;
         width: 50%;
-        height: 87vh;
+        height: 100vh;
         background-image: url('https://previews.123rf.com/images/eugenius777/eugenius7771612/eugenius777161200025/69350504-fondo-geom%C3%A9trico-abstracto-de-tonos-marrones-rombo-y-formas-cuadradas.jpg');
         background-repeat: none;
         background-position: center center;
@@ -41,16 +55,18 @@
         padding: 20px;
         justify-content: center;
         background-color: var(--color-5);
-        height: 87vh;
+        height: 100vh;
         width: 50%;
+        padding-top: 170px;
     }
 
-    form {
+    #form-login {
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: 3;
         gap: 15px;
         width: 100%;
+        
     }
 }
 
@@ -64,7 +80,7 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        height: 60vh;
+        height: 90vh;
         width: 100%;
         background-color: var(--color-5);
     }
@@ -79,7 +95,7 @@
     width: 70%;
 }
 
-#email, #password {
+#username, #email, #password {
     border-radius: 18px;
     border: 2px solid var(--color-2);
     padding: 10px;
