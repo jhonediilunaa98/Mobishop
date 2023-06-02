@@ -1,0 +1,13 @@
+.nosotros-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.us-image-container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
