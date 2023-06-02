@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Link } from 'react-router-dom'
 import UserContext from "../context/UserContext";
+import { Link, redirect } from "react-router-dom";
+
 
 const Login = () => {
     const { loginAsync, userError, user, userSuccess } = useContext(UserContext);
@@ -9,8 +10,8 @@ const Login = () => {
       const { email, password } = evento.target.elements;
       console.log(email.value, password.value);
       loginAsync(email.value, password.value);
-      if (user) {
-        
+      if(user){
+        return <redirect to='/contact'/>
       }
     };
 
@@ -44,12 +45,13 @@ const Login = () => {
                             type="submit"
                             className='btn-submit'
                          />
-                         <Link to={'/nuevacuenta'} className='new'>Crear Cuenta</Link>
+                         {user 
+                         ? <Link to={'/'} className='Msg'>Go to home</Link>
+                         : <Link to={'/nuevacuenta'} className='new'>¿No tienes una cuenta?</Link>
+                         }
                          {userError 
-                    ? (<p className="Msg">{userError}</p>) 
-                    : userSuccess 
-                    ? (<p className="Msg">{userSuccess}</p>)
-                    : null}
+                         ? (<p className="Msg">{userError}</p>) 
+                         : null }
                     </form>
                 </section>
                 

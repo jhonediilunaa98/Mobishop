@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import UserContext from "../context/UserContext";
 
 const Nuevacuenta = () => {
-        const { login, userError, user } = useContext(UserContext);
+        const { login, user } = useContext(UserContext);
         const enviar = (evento) => {
           evento.preventDefault();
           const { username, email, password } = evento.target.elements;
           console.log(username.value, email.value, password.value);
           login(username.value, email.value, password.value);
-          if (user) {
-            return alert("bienvenido")
+          if(user) {
+            return console.log("bienvenido")
           }
         };
 
@@ -51,7 +51,10 @@ const Nuevacuenta = () => {
                             type="submit"
                             className='btn-submit'
                          />
-                         <Link to={'/login'} className='new'>¿Ya tienes una cuenta?</Link>
+                         {user 
+                         ? <Link to={'/'} className='Msg'>Go to home</Link>
+                         : <Link to={'/login'} className='new'>¿Ya tienes una cuenta?</Link>
+                         }
                     </form>
                 </section>
                 

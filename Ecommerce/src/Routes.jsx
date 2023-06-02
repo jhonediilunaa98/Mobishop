@@ -7,8 +7,8 @@ import Product from './components/Product';
 import Contact from './components/Contact';
 //import Header from './components/Header';
 import Layout from './components/Layout';
-import Login from './components/buttons/Login';
-import Nuevacuenta from './components/buttons/Nuevacuenta'
+import Login from './components/Login';
+import Nuevacuenta from './components/Nuevacuenta'
 import ProductDetail from './components/ProductDetail';
 
 
