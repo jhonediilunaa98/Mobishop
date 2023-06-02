@@ -7,7 +7,7 @@ const Login = () => {
     const { loginAsync, userError, user } = useContext(UserContext);
     const iniciar = (evento) => {
       evento.preventDefault();
-      const { username, email, password } = evento.target.elements;
+      const { email, password } = evento.target.elements;
       console.log(email.value, password.value);
       loginAsync(email.value, password.value);
     };
