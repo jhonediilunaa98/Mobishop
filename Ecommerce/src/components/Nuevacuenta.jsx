@@ -10,7 +10,7 @@ const Nuevacuenta = () => {
           console.log(username.value, email.value, password.value);
           login(username.value, email.value, password.value);
           if(user) {
-            return console.log("bienvenido")
+            return console.log(username.value);
           }
         };
 
@@ -52,7 +52,7 @@ const Nuevacuenta = () => {
                             className='btn-submit'
                          />
                          {user 
-                         ? <Link to={'/'} className='Msg'>Go to home</Link>
+                         ? <Link to={'/'} className='Msg'>{username.value}</Link>
                          : <Link to={'/login'} className='new'>¿Ya tienes una cuenta?</Link>
                          }
                     </form>

@@ -1,18 +1,15 @@
 import React, { useContext } from "react";
 import UserContext from "../context/UserContext";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
-    const { loginAsync, userError, user, userSuccess } = useContext(UserContext);
+    const { loginAsync, userError, user } = useContext(UserContext);
     const iniciar = (evento) => {
       evento.preventDefault();
-      const { email, password } = evento.target.elements;
+      const { username, email, password } = evento.target.elements;
       console.log(email.value, password.value);
       loginAsync(email.value, password.value);
-      if(user){
-        return <redirect to='/contact'/>
-      }
     };
 
     return ( <>
