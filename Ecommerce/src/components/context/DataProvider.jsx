@@ -2,10 +2,12 @@ import react, {useState, useEffect, createContext} from 'react';
 import Data from '../../assets/Data.json'
 
 
+
 export const DataContext = createContext();
 
 export const DataProvider = (props)=>{
     const [productos, setProductos] = useState([])
+    const [menu, setMenu] = useState(false)
 
 
 
@@ -20,7 +22,8 @@ export const DataProvider = (props)=>{
     },[])
 
     const value ={
-        productos: [productos]
+        productos: [productos],
+        menu: [menu, setMenu]
     }
     return (
         <DataContext.Provider value={value}>

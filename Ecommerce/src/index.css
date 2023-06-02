@@ -59,3 +59,27 @@ p {
     letter-spacing: 1px;
     font-size: 8px;
 }
+@media only screen and (max-width:1000px){
+  .carriitoo_itemm{
+    width: 92%;
+  }
+}
+@media only screen and (max-width:700px){
+  .carriitoo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .carriitoo_itemm h3{
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width:450px){
+  .carriitoo_itemm h3{
+    display: .5rem;
+  }
+  .carriitoo_itemm .remove_itemm{
+    width: 30px;
+    height: 70px;
+  }
+}

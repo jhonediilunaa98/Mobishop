@@ -5,6 +5,7 @@ import './Header.module.css';
 import caart from '../assets/caart.svg';
 import UserContext from '../context/UserContext';
 import { useContext } from 'react';
+import { DataContext } from './context/DataProvider';
 
 const Header = () => {
   const [isNavActive, setNavActive] = useState(false);
@@ -18,6 +19,14 @@ const Header = () => {
   const toggleNav = () => {
     setNavActive(!isNavActive);
   };
+
+  const value = useContext(DataContext)
+  const [menu, setMenu] = value.menu;
+  console.log(menu)
+
+  const toogleMenu = () => {
+    setMenu(!menu);
+  }
 
   return (
     <header>
@@ -39,8 +48,8 @@ const Header = () => {
               <Link to="/contact">Contacto</Link>
             </li>
           </ul>
-          <div className="cartt">
-            <Link to="/cart" className="cart-link">
+          <div className="cartt" >
+            <Link to="/carrito" className="cart-link" onClick={toogleMenu}>
               <img className="cart-icon" src={caart} alt="Carrito de Compra" />
               <span className="spa itemm__total">0</span>
             </Link>
