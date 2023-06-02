@@ -34,7 +34,7 @@
         justify-content: center;
         width: 50%;
         height: 87vh;
-        background-image: url('https://previews.123rf.com/images/eugenius777/eugenius7771612/eugenius777161200025/69350504-fondo-geom%C3%A9trico-abstracto-de-tonos-marrones-rombo-y-formas-cuadradas.jpg');
+        background-image: url('../assets/Imagenlogin.png');
         background-repeat: none;
         background-position: center center;
         background-size: cover;
@@ -58,6 +58,7 @@
         grid-template-rows: 3;
         gap: 15px;
         width: 100%;
+        text-align: start;
     }
     .Msg {
         color: var(--color-1);
@@ -98,6 +99,7 @@
     gap: 15px;
     width: 70%;
     padding-bottom: 200px;
+    text-align: start;
 }
 
 #email, #password {
@@ -123,3 +125,4 @@
     font-size: 16px;
     color: var(--color-1);
 } 
+
