@@ -126,3 +126,8 @@
     color: var(--color-1);
 } 
 
+.alerta-2 {
+    display: flex;
+    justify-content: space-between;
+}
+

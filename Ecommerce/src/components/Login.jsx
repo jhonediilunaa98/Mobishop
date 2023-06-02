@@ -30,6 +30,7 @@ const Login = () => {
                             name='email'
                             placeholder='Tu Email'
                             id='email'
+                            required
                          />
                         
                         <input 
@@ -37,6 +38,7 @@ const Login = () => {
                             name='password'
                             placeholder='Tu Contraseña'
                             id='password'
+                            required
                          />
                         
                         <input 
@@ -49,7 +51,10 @@ const Login = () => {
                          <span className='Msg'>Bienvenido/a</span>
                          <Link to={'/product'} className='Msg'>Ir a Productos </Link>
                          </article>
-                         : <Link to={'/nuevacuenta'} className='new'>¿No tienes una cuenta?</Link>
+                         : <article className="alerta-2">
+                            <Link to={'/nuevacuenta'} className='new'>¿No tienes una cuenta?</Link>
+                            <Link to={'/nuevacuenta'} className='new'>¿Olvidaste tu contraseña?</Link>
+                         </article>
                          }
                          {userError 
                          ? (<p className="Msg">{userError}</p>) 

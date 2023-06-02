@@ -36,7 +36,7 @@
     margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1090px) {
     .main-form {
         display: flex;
         flex-direction: row;
@@ -77,7 +77,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
     .section-1 {
         display: none;
     }
@@ -99,7 +99,7 @@
     grid-template-columns: 1;
     grid-template-rows: 3;
     gap: 15px;
-    width: 70%;
+    width: 60%;
 }
 
 #username, #email, #password {
