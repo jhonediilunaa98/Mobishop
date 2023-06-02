@@ -30,28 +30,28 @@ const CardP = () => {
   };
 
   return (
-    <div>
+    <section>
       <ul className='todos'>
         {data.map((item) => (
           <li key={item.id}>
-            <div className='product' onClick={() => showProductDetails(item)}>
+            <article className='product' onClick={() => showProductDetails(item)}>
               <img src={item.img} alt={item.title} />
-              <div className="product-info">
+              <article className="product-info">
                 <h2 className='h22'>{item.title}</h2>
                 <p className="p">${item.price}</p>
                 <a className="product-btn" href="#">Buy Now</a>
-              </div>
-            </div>
+              </article>
+            </article>
           </li>
         ))}
       </ul>
 
       {selectedItem && (
-        <div className="overlay" onClick={hideProductDetails}>
+        <article className="overlay" onClick={hideProductDetails}>
           <ProductDetails item={selectedItem} />
-        </div>
+        </article>
       )}
-    </div>
+    </section>
   );
 };
 
