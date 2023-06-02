@@ -10,7 +10,6 @@ const Product = () => {
   const value = useContext(DataContext);
   const [productos] = value.productos;
 
-  console.log(productos);
 
   return (
     <>
@@ -24,6 +23,7 @@ const Product = () => {
             price={producto.price}
             desc={producto.desc}
             img={producto.img}
+            cantidad={producto.cantidad}
           />
         ))}
       </div>

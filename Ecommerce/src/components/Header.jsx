@@ -22,7 +22,7 @@ const Header = () => {
 
   const value = useContext(DataContext)
   const [menu, setMenu] = value.menu;
-  console.log(menu)
+  const [carrito] = value.carrito;
 
   const toogleMenu = () => {
     setMenu(!menu);
@@ -51,7 +51,7 @@ const Header = () => {
           <div className="cartt" >
             <Link to="/carrito" className="cart-link" onClick={toogleMenu}>
               <img className="cart-icon" src={caart} alt="Carrito de Compra" />
-              <span className="spa itemm__total">0</span>
+              <span className="spa itemm__total">{carrito.length}</span>
             </Link>
           </div>
         </nav>

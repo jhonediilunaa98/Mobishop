@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, {useContext} from "react";
+import {Link} from "react-router-dom"
+import { DataContext } from "../components/context/DataProvider";
 const ProductosItem = ({
     // eslint-disable-next-line react/prop-types
     id,
@@ -7,7 +8,16 @@ const ProductosItem = ({
     price,
     desc,
     img,
+    cantidad,
 }) => {
+
+const value = useContext(DataContext);
+const addCarrito = value.addCarrito
+
+
+
+
+
     return (
         <div className="productoo">
             <a className="A" href="#">
@@ -21,7 +31,7 @@ const ProductosItem = ({
                 <p className="pricee">${price}</p>
             </div>
             <div className="botonn">
-                <button className="bbttnn"> Añadir al carrito</button>
+                <button className="bbttnn" onClick={()=>addCarrito(id)}> Añadir al carrito</button>
                 <div className="divv">
                     <a href="#" className="bbttnn A">
                         Vista
