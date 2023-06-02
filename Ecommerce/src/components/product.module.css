@@ -4,18 +4,84 @@
 	color: var(--color-2);
 }
 .productoss{
-	padding: 5rem 2rem;
+	padding: 5rem 1;
 	margin:  0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-	gap: 3rem 1rem;
+	gap: 3rem 2rem;
 	box-sizing: border-box;
 }
 .productoo{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	box-shadow: 1px 10px 10px rgba(0, 0, 0, .2);
+	box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, .2);
 	border: 6px solid transparent;
 	border-radius: 5px;
 }
+.productoo:hover{
+	border: 6px solid var( --color-4);
+}
+.productoo_iimgg .immg {
+	width:310px;
+}
+.productoo_footerr {
+	padding: 1rem;
+}
+.productoo_footerr h1{
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: #1a202c;
+	font-family: popping;
+
+}
+.productoo_footerr .pricee{
+	font-size: 2rem;
+	color: #1a202c;
+}
+.productoo_footerr p{
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #1a202c;
+	font-family: popping;
+	font-size: 16px;
+}
+.productoo .botonn{
+	width: 100%;
+	height: 45px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1rem 3rem;
+	padding: 0 1rem;
+	margin: 1rem;
+}
+.botonn .bbttnn{
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.botonn button{
+	background-color: var(--color-2);
+	max-width: 250px;
+	width: 100%;
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 600;
+}
+.botonn .divv{
+	background-color: var(--color-3);
+	display: grid;
+	align-items: center;
+	text-align: center;
+	margin-left: -2rem;
+	border-radius: 5px;
+}
+.botonn .divv a{
+	color: white;
+	font-weight: 700;
+}
+.botonn .divv a:hover{
+	color: white;
+}
+ 
