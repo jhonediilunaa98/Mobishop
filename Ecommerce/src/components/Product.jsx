@@ -1,31 +1,32 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import iphone from '../assets/iPhone-14.jpg'
 import CardP from './CardP'
 import './product.module.css'
-
-
-
-
-
-
-
-
 const Product = () => {
 
   return (
     <>
-      <section className="prod">
-        <h2 className="h2">Productos </h2>
-        <article className='buttonn'>
-        <button className='btn2'>Iphone 14</button>
-        <button className='btn2'>Iphone 14 Pro</button>
-        <button className='btn2'>Iphone 14 Pro Max</button>
-        <button className='btn2'>Iphone 15</button>
-        </article>
-        <div className="all-products">
+      <h1 className='titlee'>Productos </h1>
+      <div className='productoss'>
+        <div className='productoo'>
+        <a href='#'>
+        <div className='productoo_iimgg'>
+          <img src={iphone} />
         </div>
-      </section>
-      <CardP className="todos" />
+        </a>
+      
+      <div className='productoo_footerr'>
+        <h1>titel</h1>
+        <p>categoria</p>
+        <p className='pricee'>$5.654.89</p>
+      </div>
+      <div className='botonn'>
+        <button className='bbttnn'> Añadir al carrito</button>
+        <a href='#' className='bbttnn'>Vista</a>
+      </div>
+      </div>
+      </div>
     </>
   )
 }
