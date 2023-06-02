@@ -6,11 +6,11 @@ import banner2 from '../assets/banner2.png';
 function Banner() {
   return (
 
-    <section className="home-container">
-      <picture className="banner">
+    <div className="home-container">
+      <div className="banner">
         <img src={banner2} alt="Banner" className="banner-image" />
-        </picture>
-      </section>
+        </div>
+      </div>
 
       )
     }
