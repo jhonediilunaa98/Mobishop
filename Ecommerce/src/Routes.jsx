@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import Layout from './components/Layout';
 import Login from './components/Login';
 import Nuevacuenta from './components/Nuevacuenta'
-import ProductDetail from './components/ProductDetail';
+import Carrito from './components/Carrito/Carrito';
 
 
 const App = createBrowserRouter(
@@ -44,8 +44,8 @@ const App = createBrowserRouter(
       element: <Nuevacuenta />
     },
     {
-      path: "/details",
-      element: <ProductDetail />
+      path: "/carrito",
+      element: <Carrito />
     },
       ]
     }

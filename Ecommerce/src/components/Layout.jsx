@@ -3,11 +3,13 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Outlet } from 'react-router-dom'
+import Carrito from './Carrito/Carrito'
 
 const Layout = () => {
   return (
     <>
         <Header />
+        <Carrito />
         <Outlet />
       <Footer />
     </>
