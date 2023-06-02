@@ -21,12 +21,14 @@ const Nuevacuenta = () => {
                     <h2></h2>
                 </section>
                 <section className='section-2'>
-                    <h1 className='title'>Crear Cuenta</h1>
+                <h1 className='title-form'>Registrarse</h1>
+                <p className="description-form">Crea tu cuenta para poder comprar</p>
                     <form 
                         id='form-login'
                         action="#"
                         onSubmit={enviar}
                     >
+                        
                         <input 
                             type="text"
                             name='username'
@@ -52,7 +54,10 @@ const Nuevacuenta = () => {
                             className='btn-submit'
                          />
                          {user 
-                         ? <Link to={'/'} className='Msg'>{username.value}</Link>
+                         ? <article className="alerta">
+                            <span className='Msg'>Registro exitoso {username.value}</span>
+                            <Link to={'/'} className='Msg'>Ir a home </Link>
+                         </article>
                          : <Link to={'/login'} className='new'>¿Ya tienes una cuenta?</Link>
                          }
                     </form>
