@@ -1,18 +1,16 @@
 import React, { useContext } from "react";
-import { Link } from 'react-router-dom'
 import UserContext from "../context/UserContext";
+import { Link } from "react-router-dom";
 
-const Nuevacuenta = () => {
-        const { login, userError, user } = useContext(UserContext);
-        const enviar = (evento) => {
-          evento.preventDefault();
-          const { username, email, password } = evento.target.elements;
-          console.log(username.value, email.value, password.value);
-          login(username.value, email.value, password.value);
-          if (user) {
-            return alert("bienvenido")
-          }
-        };
+
+const Login = () => {
+    const { loginAsync, userError, user } = useContext(UserContext);
+    const iniciar = (evento) => {
+      evento.preventDefault();
+      const { username, email, password } = evento.target.elements;
+      console.log(email.value, password.value);
+      loginAsync(email.value, password.value);
+    };
 
     return ( <>
             <main className='main-form'>
@@ -21,18 +19,11 @@ const Nuevacuenta = () => {
                     <h2></h2>
                 </section>
                 <section className='section-2'>
-                    <h1 className='title'>Crear Cuenta</h1>
+                    <h1 className='title'>Iniciar Sesión</h1>
                     <form 
                         id='form-login'
-                        action="#"
-                        onSubmit={enviar}
+                        onSubmit={iniciar}
                     >
-                        <input 
-                            type="text"
-                            name='username'
-                            placeholder='Tu Nombre'
-                            id='username'
-                         />
                         <input 
                             type="email"
                             name='email'
@@ -46,18 +37,24 @@ const Nuevacuenta = () => {
                             placeholder='Tu Contraseña'
                             id='password'
                          />
-
+                        
                         <input 
                             type="submit"
                             className='btn-submit'
                          />
-                         <Link to={'/login'} className='new'>¿Ya tienes una cuenta?</Link>
+                         {user 
+                         ? <Link to={'/'} className='Msg'>Go to home</Link>
+                         : <Link to={'/nuevacuenta'} className='new'>¿No tienes una cuenta?</Link>
+                         }
+                         {userError 
+                         ? (<p className="Msg">{userError}</p>) 
+                         : null }
                     </form>
                 </section>
                 
-            </main>        
+            </main>       
             </>
      );
 }
  
-export default Nuevacuenta;
+export default Login;

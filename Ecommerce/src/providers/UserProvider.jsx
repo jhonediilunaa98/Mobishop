@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UserContext from "../context/UserContext";
+import { Link } from 'react-router-dom'
 
 const UserProvider = ({ children }) => {
   const usuarios = [
@@ -17,41 +18,26 @@ const UserProvider = ({ children }) => {
       body: JSON.stringify({ username: username, email: email, password: password}, null, 2),
     })
       .then((respuesta) => respuesta.json())
-      .then((usuarios) => {
-        let encontrado = usuarios.find((usuario) => usuario.email == email);
-        if (!encontrado) {
-          setUser(null);
-          setUserError("usuario no encontrado");
-          setUserSuccess(null);
-          return false;
+      .then((data) => {
+        if (data) {
+          setUser("user");
         }
-
-        if (encontrado.password != password) {
-          setUser(null);
-          setUserError("clave no coincide");
-          setUserSuccess(null);
-          return false;
-        }
-
-        setUser(encontrado);
-        setUserError(null);
-        setUserSuccess("Bienvenido");
-        return true;
       })
       .catch((error) => {
-        setUser(null);
-        setUserError(error.msg);
-        setUserSuccess(null);
-        return error;
-      });
+        setUserError("Error al registrar el usuario");
+        console.error(error);
+        });
+        
   };
+  
 
-  const loginAsync = async (email, password) => {
+ 
+  const loginAsync = async ( email, password) => {
       const consulta = await fetch(
         "https://64769b539233e82dd53a2bb9.mockapi.io/registrer"
       );
-      const usuarios = await consulta.json();
-      let encontrado = usuarios.find((usuario) => usuario.email == email && usuario.password === password);
+      const users = await consulta.json();
+      let encontrado = users.find((usuario) => usuario.email == email && usuario.password === password);
       if (!encontrado) {
         setUser(null);
         setUserError("Usuario no encontrado");
@@ -61,11 +47,11 @@ const UserProvider = ({ children }) => {
 
       setUser(encontrado);
         setUserError(null);
-        setUserSuccess("Bienvenido");
+        setUserSuccess('Bienvenido');
         return true;
-
       
   };
+
   return (
     <UserContext.Provider
       value={{ user, userError, login, usuarios, userSuccess, loginAsync }}
