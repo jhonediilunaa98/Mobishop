@@ -10,7 +10,7 @@ const ProductosItem = ({
 }) => {
     return (
         <div className="productoo">
-            <a href="#">
+            <a className="A" href="#">
                 <div className="productoo_iimgg">
                     <img className="immg" src={img} />
                 </div>
@@ -23,7 +23,7 @@ const ProductosItem = ({
             <div className="botonn">
                 <button className="bbttnn"> Añadir al carrito</button>
                 <div className="divv">
-                    <a href="#" className="bbttnn">
+                    <a href="#" className="bbttnn A">
                         Vista
                     </a>
                 </div>
