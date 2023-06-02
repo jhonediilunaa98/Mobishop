@@ -1,24 +1,21 @@
 import React from 'react';
 import './Destacados.css';
-import black_2 from '../assets/black_2.jpeg';
-import oferta_1 from '../assets/oferta_1.jpeg';
-import vide from '../assets/iPhone 15 Pro Max Trailer Official Design.mp4';
+import camara from '../assets/camara.svg';
+import dynamic from '../assets/dynamic.svg';
+import chip from '../assets/chip.svg';
 
 function Destacados() {
   return (
     <main>
       <div className="card">
         <div className='p'>
-          <span className='span'><img src={black_2} alt="Black 2" /></span>
+          <span className='span'><img src={chip} alt="chip"/></span>
         </div>
         <div className='p'>
-          <span className='span'><img src={black_2} alt="Black 2" /></span>
+          <span className='span'><img src={camara} alt="camara" /></span>
         </div>
         <div className='p'>
-          <span className='span'><img src={oferta_1} alt="Oferta 1" /></span>
-        </div>
-        <div className='p'>
-          <span className='span'><img src={oferta_1} alt="Oferta 1" /></span>
+          <span className='span'><img src={dynamic} alt="dynamic" /></span>
         </div>
       </div>
 
