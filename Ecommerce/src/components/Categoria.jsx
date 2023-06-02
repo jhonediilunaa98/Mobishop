@@ -1,30 +1,11 @@
 import React from 'react';
-import './Destacados.css';
-import camara from '../assets/camara.svg';
-import dynamic from '../assets/dynamic.svg';
-import chip from '../assets/chip.svg';
-import sos from '../assets/sos.svg';
+import './Categoria.module.css';
 
-function Destacados() {
+function Categoria() {
   return (
-    <main>
-      <div className="card">
-        <div className='p'>
-          <span className='span'><img src={chip} alt="chip"/></span>
-        </div>
-        <div className='p'>
-          <span className='span'><img src={sos} alt="sos" /></span>
-        </div>
-				<div className='p'>
-          <span className='span'><img src={camara} alt="camara pro" /></span>
-        </div>
-        <div className='p'>
-          <span className='span'><img src={dynamic} alt="dynamic island" /></span>
-        </div>
-      </div>
-
+  
 <section className="containerr-relatedd-productss">
-			<h2 id='h22'>Nuevos productos</h2>
+			<h2 id='h22'>Los más vendidos</h2>
 			<div className="cardd-listt-productss">
 				<div className="cardd">
 					<div className="cardd-imgg">
@@ -85,12 +66,10 @@ function Destacados() {
 						</div>
 						<div className="pricee">$250.00</div>
 					</div>
-				</div>
-			</div>
-		</section>
-    </main>
-
+          </div>
+          </div>
+          </section>
   );
 }
 
-export default Destacados;
+export default Categoria;
