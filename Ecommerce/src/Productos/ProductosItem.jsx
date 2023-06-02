@@ -19,26 +19,26 @@ const addCarrito = value.addCarrito
 
 
     return (
-        <div className="productoo">
+        <section className="productoo">
             <Link to={`/product/${id}`}>
-                <div className="productoo_iimgg">
+                <article className="productoo_iimgg">
                     <img className="immg" src={img} />
-                </div>
+                </article>
             </Link>
-            <div className="productoo_footerr">
+            <article className="productoo_footerr">
                 <h1>{title}</h1>
                 <p>categoria</p>
                 <p className="pricee">${price}</p>
-            </div>
-            <div className="botonn">
+            </article>
+            <article className="botonn">
                 <button className="bbttnn" onClick={()=>addCarrito(id)}> Añadir al carrito</button>
-                <div className="divv">
+                <article className="divv">
                     <Link to={`/product/${id}`} className="bbttnn A">
                         Vista
                     </Link>
-                </div>
-            </div>
-        </div>
+                </article>
+            </article>
+        </section>
     );
 };
 

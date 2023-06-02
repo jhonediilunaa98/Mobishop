@@ -24,9 +24,9 @@ const Footer = () => {
         <h6 className={styles['footer-subscription-text']}>
           Puedes anular la suscripción en cualquier momento
         </h6>
-        <div className={styles['input-areas']}>
+        <article className={styles['input-areas']}>
           <form>
-            <div className={styles['input-row']}>
+            <article className={styles['input-row']}>
                 <input
                   className={styles['footer-input']}
                   name="email"
@@ -34,9 +34,9 @@ const Footer = () => {
                   placeholder="Escribe tu Email"
                 />
                 <Button buttonStyle="btn--outline">Subscrirse</Button>
-              </div>
+              </article>
           </form>
-        </div>
+        </article>
       </section>
         <ul className="RedesSociales">
       <FontAwesomeIcon icon={faSquareInstagram}/>

@@ -14,7 +14,7 @@ const Product = () => {
   return (
     <>
       <h1 className="titlee">Productos </h1>
-      <div className="productoss">
+      <section className="productoss">
         {productos.map((producto) => (
           <ProductosItem
             key={producto.id}
@@ -26,7 +26,7 @@ const Product = () => {
             cantidad={producto.cantidad}
           />
         ))}
-      </div>
+      </section>
     </>
   );
 };
