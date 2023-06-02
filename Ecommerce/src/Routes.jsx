@@ -10,6 +10,7 @@ import Layout from './components/Layout';
 import Login from './components/Login';
 import Nuevacuenta from './components/Nuevacuenta'
 import Carrito from './components/Carrito/Carrito';
+import ProductDetail from './components/ProductDetail';
 
 
 const App = createBrowserRouter(
@@ -46,6 +47,10 @@ const App = createBrowserRouter(
     {
       path: "",
       element: <Carrito />
+    },
+    {
+      path: "product/:id",
+      element: <ProductDetail />
     },
       ]
     }
