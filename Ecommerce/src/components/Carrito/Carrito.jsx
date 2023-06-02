@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import iphone from '../../assets/iPhone-14.jpg'
-import 'boxicons'
+// import 'boxicons'
 import { DataContext } from '../context/DataProvider'
 
 

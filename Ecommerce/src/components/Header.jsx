@@ -57,9 +57,9 @@ const Header = () => {
         </nav>
         <div className="login">
         {user ? (
-            <button onClick={Logout}>Cerrar Sesión</button>
+            <button onClick={Logout} className='alert'>Cerrar Sesión</button>
             ) : (
-            <Link to="/login">Iniciar Sesión</Link>
+            <Link to="/login" className='alert' >Iniciar Sesión</Link>
         )}
         </div>
         <div className="hamburger" onClick={toggleNav}>

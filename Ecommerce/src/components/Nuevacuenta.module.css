@@ -29,6 +29,13 @@
     margin: 0;
 }
 
+.subtitle-form {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-3);
+    margin: 0;
+}
+
 @media (min-width: 768px) {
     .main-form {
         display: flex;
@@ -41,7 +48,7 @@
         justify-content: center;
         width: 50%;
         height: 100vh;
-        background-image: url('https://previews.123rf.com/images/eugenius777/eugenius7771612/eugenius777161200025/69350504-fondo-geom%C3%A9trico-abstracto-de-tonos-marrones-rombo-y-formas-cuadradas.jpg');
+        background-image: url('../assets/Imagenlogin.png');
         background-repeat: none;
         background-position: center center;
         background-size: cover;
